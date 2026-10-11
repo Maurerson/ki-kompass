@@ -23,10 +23,13 @@ Danach im Browser `http://localhost:8000` öffnen.
 
 ## Tägliche Aktualisierung
 
-1. Eine geplante Aufgabe recherchiert täglich die KI-Neuigkeiten.
-2. Sie aktualisiert `data/news.json` und öffnet einen Pull Request.
-3. Ein Mensch prüft die Meldungen und gibt den Pull Request frei.
-4. GitHub Pages veröffentlicht die neue Version automatisch.
+1. **Kurz vor 8 Uhr** recherchiert eine geplante Aufgabe die KI-Neuigkeiten, aktualisiert `data/news.json` auf einem Branch `news/JJJJ-MM-TT` und schickt eine Benachrichtigung.
+2. **Freigeben:** Branch selbst in `main` mergen (Pull Request erstellen und mergen).
+3. **Stoppen:** Branch auf GitHub löschen. Dann wird an diesem Tag nichts veröffentlicht.
+4. **Keine Reaktion:** Eine zweite Aufgabe 30 Minuten später prüft die Datei mit `scripts/check_news.py` und merged den Branch automatisch, wenn die Prüfung besteht.
+5. GitHub Pages veröffentlicht die neue Version.
+
+Prüfung manuell starten: `python3 scripts/check_news.py`
 
 ### Regeln für Meldungen
 
