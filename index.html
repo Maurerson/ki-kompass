@@ -1,0 +1,457 @@
+<title>KI-Kompass</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@500;700;800&family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=JetBrains+Mono:wght@400;600&display=swap">
+<style>
+/* Layout: eine ruhige Lesespalte; oben die Frage + Schnell-Finder, darunter Anbieter-Raster (international / Schweiz & Europa), in der Firmenansicht Ampel + Checkliste, dann "Was ist neu" als Zeitleiste */
+:root{
+  --bg:#F4F6F7; --surface:#FFFFFF; --ink:#15212B; --muted:#5B6873; --line:#DCE2E6;
+  --accent:#C8261B; --accent-soft:#FBE9E7; --ok:#1E7A4F; --ok-soft:#E3F3EA; --warn:#A86200; --warn-soft:#FBF0DD;
+  --f-display:"Schibsted Grotesk", "Helvetica Neue", Arial, sans-serif;
+  --f-body:"Atkinson Hyperlegible", "Segoe UI", Arial, sans-serif;
+  --f-mono:"JetBrains Mono", ui-monospace, Menlo, Consolas, monospace;
+  --r:10px;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#10171D; --surface:#18222A; --ink:#E8EDF0; --muted:#9AA7B1; --line:#2A3640;
+  --accent:#F0584B; --accent-soft:#3A1E1C; --ok:#5CC08E; --ok-soft:#173226; --warn:#E9A94A; --warn-soft:#352813; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#10171D; --surface:#18222A; --ink:#E8EDF0; --muted:#9AA7B1; --line:#2A3640;
+  --accent:#F0584B; --accent-soft:#3A1E1C; --ok:#5CC08E; --ok-soft:#173226; --warn:#E9A94A; --warn-soft:#352813; color-scheme:dark}
+
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font:17px/1.6 var(--f-body);padding:0 16px}
+.wrap{max-width:1080px;margin:0 auto}
+h1,h2,h3{font-family:var(--f-display);line-height:1.15;text-wrap:balance;margin:0}
+a{color:inherit}
+a:focus-visible,button:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+
+.bar{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg);border-bottom:1px solid var(--line);margin:0 -16px;padding:10px 16px}
+.bar .wrap{display:flex;align-items:center;gap:16px;flex-wrap:wrap;justify-content:space-between}
+.brand{display:flex;align-items:center;gap:10px;font-family:var(--f-display);font-weight:800;font-size:20px;text-decoration:none}
+.brand svg{flex:none}
+.seg{display:inline-flex;border:1px solid var(--line);border-radius:999px;padding:3px;background:var(--surface)}
+.seg button{font:600 15px var(--f-body);border:0;background:none;color:var(--muted);padding:7px 16px;border-radius:999px;cursor:pointer}
+.seg button[aria-pressed="true"]{background:var(--ink);color:var(--bg)}
+
+.proto{font:13px var(--f-mono);color:var(--muted);padding-block:10px;border-bottom:1px dashed var(--line)}
+.proto b{color:var(--accent);font-weight:600}
+
+.hero{padding-block:44px 28px;display:grid;grid-template-columns:1.1fr 1fr;gap:40px;align-items:start}
+.hero>*{min-width:0}
+.eyebrow{font:600 12px var(--f-mono);letter-spacing:.12em;text-transform:uppercase;color:var(--accent)}
+.hero h1{font-size:clamp(34px,5.6vw,58px);font-weight:800;letter-spacing:-.02em;margin-top:10px}
+.hero p.lead{color:var(--muted);max-width:52ch;margin:16px 0 0}
+.stamp{display:inline-flex;gap:8px;align-items:center;margin-top:20px;font:13px var(--f-mono);color:var(--muted)}
+.stamp i{width:8px;height:8px;border-radius:50%;background:var(--ok);display:inline-block}
+
+.finder{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:22px}
+.finder h2{font-size:20px}
+.q{margin-top:16px}
+.q label{display:block;font-weight:700;font-size:15px;margin-bottom:8px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chips button{font:15px var(--f-body);border:1px solid var(--line);background:var(--bg);color:var(--ink);padding:6px 12px;border-radius:999px;cursor:pointer}
+.chips button[aria-pressed="true"]{border-color:var(--accent);background:var(--accent-soft);font-weight:700}
+.result{margin-top:18px;border-top:1px solid var(--line);padding-top:16px}
+.result .k{font:600 12px var(--f-mono);letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.result .pick{font-family:var(--f-display);font-size:26px;font-weight:800;margin-top:4px}
+.result p{margin:6px 0 0;color:var(--muted);font-size:15px}
+.result .alt{font-size:14px}
+.why-tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px}
+.why-tags span{font-size:13px;padding:3px 10px;border-radius:999px;background:var(--ok-soft);color:var(--ok);font-weight:700}
+
+section{padding-block:28px}
+.sec-head{display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap;border-bottom:2px solid var(--ink);padding-bottom:10px;margin-bottom:20px}
+.sec-head h2{font-size:28px}
+.sec-head span{font:13px var(--f-mono);color:var(--muted)}
+.sub{font-family:var(--f-display);font-size:19px;margin:28px 0 6px}
+.sub-note{color:var(--muted);font-size:15px;margin:0 0 16px;max-width:68ch}
+
+.legend{display:flex;flex-wrap:wrap;gap:16px;font-size:14px;color:var(--muted);margin:-6px 0 18px}
+.legend span{display:inline-flex;align-items:center;gap:6px}
+
+.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:20px;display:flex;flex-direction:column;gap:12px;min-width:0}
+.card.match{border-color:var(--accent);box-shadow:0 0 0 1px var(--accent)}
+.card-top{display:flex;justify-content:space-between;align-items:start;gap:10px}
+.card h3{font-size:22px}
+.maker{font-size:14px;color:var(--muted)}
+.tag{font:600 11px var(--f-mono);letter-spacing:.08em;text-transform:uppercase;padding:4px 8px;border-radius:999px;background:var(--accent-soft);color:var(--accent);white-space:nowrap}
+.card p{margin:0}
+.best{font-size:15px}
+dl{margin:0;display:grid;grid-template-columns:auto 1fr;gap:6px 12px;font-size:14px;border-top:1px solid var(--line);padding-top:12px}
+dt{color:var(--muted)}
+dd{margin:0;font-family:var(--f-mono);font-size:13px;font-variant-numeric:tabular-nums}
+.privacy{font-size:14px;padding:10px 12px;border-radius:8px;background:var(--bg)}
+
+.ampel{list-style:none;margin:0;padding:10px 12px;border-radius:8px;background:var(--bg);display:grid;gap:6px;font-size:14px}
+.ampel li{display:grid;grid-template-columns:14px 92px minmax(0,1fr);gap:8px;align-items:baseline}
+.ampel .l{color:var(--muted)}
+.dot{width:10px;height:10px;border-radius:50%;display:inline-block;transform:translateY(1px)}
+.dot.ok{background:var(--ok)} .dot.warn{background:var(--warn)}
+.card a.more{margin-top:auto;font-size:14px;font-weight:700;text-decoration:none;color:var(--accent)}
+.card a.more:hover{text-decoration:underline}
+
+.check{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px 28px;counter-reset:c}
+.check li{counter-increment:c;display:grid;grid-template-columns:32px minmax(0,1fr);gap:10px;padding-block:12px;border-top:1px solid var(--line)}
+.check li::before{content:counter(c);font:600 14px var(--f-mono);color:var(--accent);padding-top:2px}
+.check b{display:block;font-family:var(--f-display);font-size:17px}
+.check span{color:var(--muted);font-size:15px}
+
+.tabs{display:flex;gap:4px;border-bottom:1px solid var(--line);margin:-8px 0 4px;overflow-x:auto}
+.tabs button{font:700 16px var(--f-body);background:none;border:0;border-bottom:3px solid transparent;color:var(--muted);padding:10px 14px;cursor:pointer;white-space:nowrap}
+.tabs button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--accent)}
+.tabs small{font:13px var(--f-mono);margin-left:6px;color:var(--muted)}
+.news{list-style:none;margin:0;padding:0}
+.news-empty{color:var(--muted);padding-block:16px}
+.cat{font:600 11px var(--f-mono);letter-spacing:.06em;text-transform:uppercase;padding:2px 8px;border-radius:999px;background:var(--bg);border:1px solid var(--line);color:var(--muted);margin-left:8px}
+.news li{display:grid;grid-template-columns:120px minmax(0,1fr);gap:20px;padding-block:16px;border-bottom:1px solid var(--line)}
+.news time{font:13px var(--f-mono);color:var(--muted);padding-top:3px}
+.news .who{font:600 11px var(--f-mono);letter-spacing:.08em;text-transform:uppercase;color:var(--accent)}
+.news h3{font-size:18px;margin-top:2px}
+.news p{margin:4px 0 0;color:var(--muted);font-size:15px;max-width:68ch}
+.news a{font-size:13px;color:var(--muted)}
+
+footer{padding-block:28px 48px;color:var(--muted);font-size:14px;border-top:1px solid var(--line);margin-top:20px}
+footer p{max-width:72ch;margin:0 0 8px}
+
+@media (max-width:900px){.grid{grid-template-columns:repeat(2,minmax(0,1fr))}.hero{grid-template-columns:1fr;gap:24px}}
+@media (max-width:600px){.grid,.check{grid-template-columns:1fr}.news li{grid-template-columns:1fr;gap:4px}.hero{padding-block:28px 16px}}
+@media (prefers-reduced-motion:no-preference){.card{transition:border-color .2s,box-shadow .2s}}
+</style>
+
+<header class="bar">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="KI-Kompass Startseite">
+      <svg width="28" height="28" viewBox="0 0 28 28" aria-hidden="true"><circle cx="14" cy="14" r="12.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M14 4 L17 14 L14 24 L11 14 Z" fill="var(--accent)"/><circle cx="14" cy="14" r="2" fill="currentColor"/></svg>
+      KI-Kompass
+    </a>
+    <div class="seg" role="group" aria-label="Ansicht wählen">
+      <button id="m-privat" type="button" aria-pressed="true" data-mode="privat">Für mich privat</button>
+      <button id="m-firma" type="button" aria-pressed="false" data-mode="firma">Für meine Firma</button>
+    </div>
+  </div>
+</header>
+
+<main class="wrap" id="top">
+  <div class="proto"><b>Prototyp</b> · Preise in USD/EUR (Listenpreise, in der Schweiz teils anders) · ohne Gewähr · Stand 11.10.2026</div>
+
+  <div class="hero">
+    <div>
+      <div class="eyebrow" id="eyebrow">KI-Assistenten einfach erklärt</div>
+      <h1 id="h1">Welche KI passt zu mir?</h1>
+      <p class="lead" id="lead"></p>
+      <div class="stamp"><i></i>Täglich aktualisiert</div>
+    </div>
+
+    <div class="finder" aria-labelledby="finder-h">
+      <h2 id="finder-h">Kurz-Check: Welche KI passt?</h2>
+      <div class="q">
+        <label id="q1">Wofür wollt ihr KI vor allem nutzen?</label>
+        <div class="chips" role="group" aria-labelledby="q1" data-q="zweck">
+          <button type="button" data-v="alles" aria-pressed="true">Von allem etwas</button>
+          <button type="button" data-v="text">Texte schreiben</button>
+          <button type="button" data-v="recherche">Recherche</button>
+          <button type="button" data-v="office">Office &amp; E-Mail</button>
+          <button type="button" data-v="code">Programmieren</button>
+        </div>
+      </div>
+      <div class="q">
+        <label id="q2">Wo sollen die Daten verarbeitet werden?</label>
+        <div class="chips" role="group" aria-labelledby="q2" data-q="daten">
+          <button type="button" data-v="egal" aria-pressed="true">Egal</button>
+          <button type="button" data-v="eu">In Europa</button>
+          <button type="button" data-v="ch">In der Schweiz</button>
+        </div>
+      </div>
+      <div class="q">
+        <label id="q3">Welche Programme nutzt ihr schon?</label>
+        <div class="chips" role="group" aria-labelledby="q3" data-q="welt">
+          <button type="button" data-v="keine" aria-pressed="true">Egal / gemischt</button>
+          <button type="button" data-v="google">Google (Gmail, Docs)</button>
+          <button type="button" data-v="microsoft">Microsoft 365</button>
+        </div>
+      </div>
+      <div class="q" data-only="firma" hidden>
+        <label id="q4">Wie gross ist euer Team?</label>
+        <div class="chips" role="group" aria-labelledby="q4" data-q="team">
+          <button type="button" data-v="klein" aria-pressed="true">1 bis 10</button>
+          <button type="button" data-v="mittel">11 bis 50</button>
+          <button type="button" data-v="gross">Über 50</button>
+        </div>
+      </div>
+      <div class="q" data-only="firma" hidden>
+        <label id="q5">Wollt ihr verschiedene KI-Modelle nutzen?</label>
+        <div class="chips" role="group" aria-labelledby="q5" data-q="multi">
+          <button type="button" data-v="nein" aria-pressed="true">Eine KI reicht</button>
+          <button type="button" data-v="ja">Ja, mehrere vergleichen</button>
+        </div>
+      </div>
+      <div class="q" data-only="privat">
+        <label id="q6">Wie viel willst du ausgeben?</label>
+        <div class="chips" role="group" aria-labelledby="q6" data-q="budget">
+          <button type="button" data-v="egal" aria-pressed="true">Bis ca. 20 pro Monat</button>
+          <button type="button" data-v="gratis">Nichts, nur gratis</button>
+        </div>
+      </div>
+      <div class="result" aria-live="polite">
+        <div class="k">Unsere Empfehlung</div>
+        <div class="pick" id="pick">ChatGPT</div>
+        <p id="why"></p>
+        <div class="why-tags" id="tags"></div>
+        <p class="alt" id="alt"></p>
+      </div>
+    </div>
+  </div>
+
+  <section aria-labelledby="h-anbieter">
+    <div class="sec-head"><h2 id="h-anbieter">Die Anbieter im Überblick</h2><span id="mode-note"></span></div>
+    <div class="legend" id="legend" hidden>
+      <span><i class="dot ok"></i>Schweiz oder EU</span>
+      <span><i class="dot warn"></i>USA oder gemischt, genauer prüfen</span>
+    </div>
+    <h3 class="sub">Die grossen Anbieter</h3>
+    <div class="grid" id="grid-int"></div>
+    <h3 class="sub">Aus der Schweiz &amp; Europa</h3>
+    <p class="sub-note" id="eu-note"></p>
+    <div class="grid" id="grid-eu"></div>
+  </section>
+
+  <section aria-labelledby="h-check" id="checklist" hidden>
+    <div class="sec-head"><h2 id="h-check">Bevor KI in die Firma kommt</h2><span>5 Punkte, die wir jedem KMU empfehlen</span></div>
+    <ol class="check">
+      <li><div><b>Firmen-Abo statt Privatkonten</b><span>Nur Firmenpläne bieten Verwaltung, Zugriffsrechte und vertragliche Zusagen zum Datenschutz.</span></div></li>
+      <li><div><b>Training mit Firmendaten ausschliessen</b><span>Prüfen, ob eure Eingaben zum Trainieren der KI verwendet werden. Bei Firmen-Abos meist ausgeschaltet.</span></div></li>
+      <li><div><b>Datenstandort klären</b><span>Wo werden Daten gespeichert und verarbeitet? Das ist für das Schweizer Datenschutzgesetz (DSG) relevant.</span></div></li>
+      <li><div><b>Regeln für Mitarbeitende festlegen</b><span>Eine kurze Richtlinie: Welche Daten dürfen rein, welche nie (z. B. Kundendaten, Passwörter)?</span></div></li>
+      <li><div><b>Klein starten und schulen</b><span>Mit einem Team und einem konkreten Anwendungsfall beginnen, Erfahrungen sammeln, dann ausrollen.</span></div></li>
+    </ol>
+  </section>
+
+  <section aria-labelledby="h-news">
+    <div class="sec-head"><h2 id="h-news">Was ist neu?</h2><span id="news-stand">Alle KI-Themen, kurz erklärt, mit Quelle</span></div>
+    <div class="tabs" role="tablist" aria-label="Zeitraum">
+      <button type="button" role="tab" id="t-gestern" data-tab="gestern" aria-selected="false">Gestern</button>
+      <button type="button" role="tab" id="t-heute" data-tab="heute" aria-selected="true">Heute</button>
+      <button type="button" role="tab" id="t-demnaechst" data-tab="demnaechst" aria-selected="false">Demnächst</button>
+    </div>
+    <ul class="news" id="news-list" role="tabpanel" aria-live="polite"><li class="news-empty">Meldungen werden geladen …</li></ul>
+  </section>
+
+  <footer>
+    <p><b>So entsteht diese Seite:</b> Eine KI sammelt täglich Neuigkeiten und Preisänderungen, ein Mensch prüft sie vor der Veröffentlichung. Jede Meldung verlinkt auf ihre Quelle.</p>
+    <p>Preise sind Listenpreise ohne Steuern. In der Schweiz können Preise und Funktionen abweichen. Angaben zum Datenstandort beruhen auf Angaben der Anbieter und ersetzen keine rechtliche Prüfung.</p>
+  </footer>
+</main>
+
+<script>
+// group: int = grosse Anbieter, eu = Schweiz & Europa; modes: wo die Karte erscheint
+// amp: [Status, Text] für Firmensitz, Datenverarbeitung, Training mit Firmendaten
+const P = [
+  {id:"chatgpt", group:"int", modes:["privat","firma"], name:"ChatGPT", maker:"OpenAI · USA", url:"https://chatgpt.com/pricing",
+   best:"Der Allrounder: Texte, Fragen, Bilder, Sprachmodus. Ideal, wenn du eine KI für alles willst.",
+   free:"Ja (in den USA mit Werbung)", privat:["Go 8 USD · Plus 20 USD","Pro ab 100 USD"], firma:["Business 25 USD / Benutzer","20 USD bei Jahreszahlung, ab 2 Benutzern"],
+   data:"US-Anbieter. Im Business-Abo werden Firmendaten laut OpenAI nicht zum Training genutzt.",
+   amp:[["warn","USA"],["warn","USA, EU-Speicherung bei Enterprise"],["ok","Nein im Business-Abo"]]},
+  {id:"claude", group:"int", modes:["privat","firma"], name:"Claude", maker:"Anthropic · USA", url:"https://claude.com/pricing",
+   best:"Stark bei langen Texten, Dokumenten und beim Programmieren. Schreibt natürlich und genau.",
+   free:"Ja", privat:["Pro 20 USD","Max 100 oder 200 USD"], firma:["Team 25 USD / Benutzer","Premium-Plätze 125 USD"],
+   data:"US-Anbieter. In Team- und Enterprise-Abos werden Daten laut Anthropic nicht zum Training genutzt.",
+   amp:[["warn","USA"],["warn","USA"],["ok","Nein im Team-Abo"]]},
+  {id:"gemini", group:"int", modes:["privat","firma"], name:"Gemini", maker:"Google · USA", url:"https://gemini.google/subscriptions/",
+   best:"Die beste Wahl, wenn du Gmail, Google Docs oder ein Android-Handy nutzt. Abo inkl. viel Cloud-Speicher.",
+   free:"Ja", privat:["AI Plus 4.99 USD · AI Pro 19.99 USD","Ultra 99.99 oder 199.99 USD"], firma:["Über Google Workspace","Preis pro Benutzer im Workspace-Abo"],
+   data:"US-Anbieter. Mit Google Workspace gelten die Firmen-Datenschutzregeln von Google.",
+   amp:[["warn","USA"],["warn","Global, Datenregion EU in höheren Workspace-Abos"],["ok","Nein mit Workspace"]]},
+  {id:"copilot", group:"int", modes:["privat","firma"], name:"Copilot", maker:"Microsoft · USA", url:"https://www.microsoft.com/microsoft-365/copilot",
+   best:"Arbeitet direkt in Word, Excel, Outlook und Windows. Ideal, wenn ihr schon Microsoft 365 nutzt.",
+   free:"Ja", privat:["In M365 Personal 9.99 USD","M365 Premium 19.99 USD"], firma:["Zusatz zu Microsoft 365","ca. 18 bis 30 USD / Benutzer"],
+   data:"US-Anbieter. Die Firmenversion arbeitet innerhalb der Microsoft-365-Umgebung der Firma.",
+   amp:[["warn","USA"],["ok","EU Data Boundary für M365-Firmen"],["ok","Nein in M365-Firmenkonten"]]},
+  {id:"lechat", group:"int", modes:["privat","firma"], name:"Le Chat", maker:"Mistral AI · Frankreich", url:"https://mistral.ai/pricing",
+   best:"Europäische Alternative, schnell und günstig. Gut, wenn dir Datenschutz in Europa wichtig ist.",
+   free:"Ja", privat:["Pro 14.99 (EUR/USD)","Studierende günstiger"], firma:["Team 24.99 USD / Benutzer","Enterprise auf Anfrage"],
+   data:"Europäischer Anbieter, Hosting in der EU.",
+   amp:[["ok","Frankreich (EU)"],["ok","EU"],["ok","Nein im Team-Abo"]]},
+  {id:"perplexity", group:"int", modes:["privat","firma"], name:"Perplexity", maker:"Perplexity AI · USA", url:"https://www.perplexity.ai/pro",
+   best:"Suchmaschine mit KI: beantwortet Fragen mit Quellenangaben. Ideal für Recherche und Fakten.",
+   free:"Ja (begrenzt)", privat:["Pro 20 USD","Max 200 USD"], firma:["Enterprise Pro 40 USD / Benutzer","Enterprise Max 325 USD"],
+   data:"US-Anbieter. Nutzt im Hintergrund Modelle verschiedener Hersteller.",
+   amp:[["warn","USA"],["warn","USA, Modelle verschiedener Hersteller"],["ok","Nein bei Enterprise"]]},
+
+  {id:"euria", group:"eu", modes:["privat","firma"], name:"Euria", maker:"Infomaniak · Genf", url:"https://www.infomaniak.com/de/euria",
+   best:"KI-Assistent vom Schweizer Hosting-Anbieter. Nutzt unter anderem das offene Schweizer Modell Apertus.",
+   free:"Prüfen", privat:["Preise beim Anbieter","infomaniak.com"], firma:["Preise beim Anbieter","Teil des Infomaniak-Angebots"],
+   data:"Verarbeitung laut Infomaniak in der Schweiz, keine Nutzung zum Training.",
+   amp:[["ok","Schweiz"],["ok","Schweiz"],["ok","Nein"]]},
+  {id:"lumo", group:"eu", modes:["privat","firma"], name:"Lumo", maker:"Proton · Genf", url:"https://lumo.proton.me",
+   best:"Vom Anbieter von Proton Mail. Stark auf Privatsphäre ausgelegt, Chatverlauf verschlüsselt.",
+   free:"Ja (mit Limits)", privat:["Plus ca. 9.99 USD","bei Jahreszahlung"], firma:["Business-Pläne","Preis beim Anbieter"],
+   data:"Schweizer Anbieter, verschlüsselter Chatverlauf, kein Training mit Chats.",
+   amp:[["ok","Schweiz"],["ok","Proton-Infrastruktur, verschlüsselt"],["ok","Nein"]]},
+  {id:"deepl", group:"eu", modes:["privat","firma"], name:"DeepL", maker:"DeepL SE · Köln", url:"https://www.deepl.com/pro",
+   best:"Übersetzen und Texte verbessern (DeepL Write). Kein Chat für alles, aber im Sprachbereich sehr stark.",
+   free:"Ja", privat:["Abo ab ca. 9 EUR","DeepL Write inklusive"], firma:["DeepL Pro für Teams","Preis pro Benutzer"],
+   data:"Deutscher Anbieter. In der Pro-Version werden Texte laut DeepL nicht gespeichert.",
+   amp:[["ok","Deutschland (EU)"],["ok","EU"],["ok","Nein in der Pro-Version"]]},
+  {id:"langdock", group:"eu", modes:["firma"], name:"Langdock", maker:"Langdock GmbH · Berlin", url:"https://www.langdock.com",
+   best:"Plattform für Firmen: GPT, Claude, Gemini und Mistral unter einem Login, mit Assistenten und Wissensdatenbank.",
+   free:"7 Tage Test", privat:["–","–"], firma:["ab 29 EUR / Benutzer","23.20 EUR bei Jahreszahlung"],
+   data:"Plattform in der EU, US-Modelle laufen aber teils bei den US-Anbietern.",
+   amp:[["ok","Deutschland (EU)"],["warn","EU-Plattform, US-Modelle teils in den USA"],["ok","Nein"]]},
+  {id:"aleph", group:"eu", modes:["firma"], name:"Aleph Alpha", maker:"Aleph Alpha · Heidelberg", url:"https://aleph-alpha.com",
+   best:"KI-Plattform für grössere Firmen und Behörden. Kann auch im eigenen Rechenzentrum laufen.",
+   free:"Nein", privat:["–","–"], firma:["Preis auf Anfrage","auch On-Premise"],
+   data:"Deutscher Anbieter, Betrieb in Europa oder im eigenen Rechenzentrum.",
+   amp:[["ok","Deutschland (EU)"],["ok","EU oder eigenes Rechenzentrum"],["ok","Nein"]]}
+];
+
+let mode = "privat";
+const ans = {zweck:"alles", daten:"egal", welt:"keine", team:"klein", multi:"nein", budget:"egal"};
+
+// Stärkenprofil statt Startbonus. use: 0 bis 3 je Zweck; loc: ch / eu / mix / us; eco: passendes Büro-Umfeld;
+// multi: mehrere KI-Modelle; free: brauchbare Gratisversion; size: für welche Teamgrössen gedacht
+const S = {
+  chatgpt:   {use:{alles:3,text:2,recherche:2,office:2,code:2}, loc:"us",  eco:null,        multi:false, free:true,  size:["klein","mittel","gross"]},
+  claude:    {use:{alles:2,text:3,recherche:2,office:1,code:3}, loc:"us",  eco:null,        multi:false, free:true,  size:["klein","mittel","gross"]},
+  gemini:    {use:{alles:2,text:2,recherche:2,office:2,code:2}, loc:"us",  eco:"google",    multi:false, free:true,  size:["klein","mittel","gross"]},
+  copilot:   {use:{alles:2,text:2,recherche:1,office:2,code:1}, loc:"mix", eco:"microsoft", multi:false, free:true,  size:["klein","mittel","gross"]},
+  lechat:    {use:{alles:2,text:2,recherche:2,office:1,code:2}, loc:"eu",  eco:null,        multi:false, free:true,  size:["klein","mittel","gross"]},
+  perplexity:{use:{alles:1,text:1,recherche:3,office:0,code:1}, loc:"us",  eco:null,        multi:true,  free:true,  size:["klein","mittel","gross"]},
+  euria:     {use:{alles:2,text:2,recherche:1,office:1,code:1}, loc:"ch",  eco:null,        multi:false, free:false, size:["klein","mittel"]},
+  lumo:      {use:{alles:2,text:2,recherche:1,office:1,code:1}, loc:"ch",  eco:null,        multi:false, free:true,  size:["klein","mittel"]},
+  deepl:     {use:{alles:0,text:3,recherche:0,office:1,code:0}, loc:"eu",  eco:null,        multi:false, free:true,  size:["klein","mittel","gross"]},
+  langdock:  {use:{alles:2,text:2,recherche:2,office:2,code:2}, loc:"mix", eco:null,        multi:true,  free:false, size:["klein","mittel","gross"]},
+  aleph:     {use:{alles:1,text:2,recherche:1,office:1,code:1}, loc:"eu",  eco:null,        multi:false, free:false, size:["gross"]}
+};
+const USE_LABEL = {alles:"guter Allrounder", text:"stark bei Texten", recherche:"stark bei Recherche", office:"stark im Büro-Alltag", code:"stark beim Programmieren"};
+
+function rate(id){
+  const s = S[id]; let pts = s.use[ans.zweck]*3; const why = [];
+  if(s.use[ans.zweck]>=3) why.push(USE_LABEL[ans.zweck]);
+  if(ans.daten==="ch"){ pts += {ch:8,eu:3,mix:-3,us:-6}[s.loc]; if(s.loc==="ch") why.push("Daten in der Schweiz"); }
+  if(ans.daten==="eu"){ pts += {ch:6,eu:6,mix:2,us:-4}[s.loc]; if(s.loc==="ch"||s.loc==="eu") why.push(s.loc==="ch"?"Daten in der Schweiz":"Daten in der EU"); if(s.loc==="mix"&&id==="langdock") why.push("Plattform in der EU"); }
+  if(ans.welt!=="keine"){ if(s.eco===ans.welt){ pts+=5; why.push(ans.welt==="google"?"passt zu Gmail & Docs":"passt zu Microsoft 365"); } else if(s.eco) pts-=2; }
+  if(mode==="firma"){
+    if(ans.multi==="ja"){ if(s.multi){ pts+=6; why.push("mehrere KI-Modelle unter einem Login"); } }
+    if(!s.size.includes(ans.team)) pts-=6; else if(ans.team==="gross"&&id==="aleph"&&ans.daten!=="egal"){ pts+=4; why.push("auch im eigenen Rechenzentrum"); }
+  } else {
+    if(ans.budget==="gratis"){ if(s.free){ pts+=3; why.push("gratis nutzbar"); } else pts-=6; }
+  }
+  return {id, pts, why};
+}
+
+function score(){
+  return P.filter(p=>p.modes.includes(mode)).map(p=>rate(p.id)).sort((a,b)=>b.pts-a.pts);
+}
+
+const reasons = {
+  chatgpt:"Kann von allem etwas und ist am einfachsten zu starten. Die Gratisversion reicht zum Ausprobieren.",
+  claude:"Schreibt besonders sauber, versteht lange Dokumente und ist sehr stark beim Programmieren.",
+  gemini:"Passt nahtlos zu Gmail, Google Docs und Android. Das Abo enthält auch viel Cloud-Speicher.",
+  copilot:"Arbeitet direkt in Word, Excel und Outlook. Für Firmen mit Microsoft 365 der einfachste Weg.",
+  lechat:"Europäischer Anbieter mit Daten in der EU und dem günstigsten Abo der grossen Anbieter.",
+  perplexity:"Liefert Antworten mit Quellen. So kannst du jede Aussage selbst nachprüfen.",
+  euria:"Schweizer Anbieter, Daten werden in der Schweiz verarbeitet. Ideal, wenn der Datenstandort Schweiz zählt.",
+  lumo:"Schweizer Anbieter mit Fokus auf Privatsphäre und verschlüsseltem Chatverlauf.",
+  deepl:"Spezialist für Übersetzen und Texte verbessern, mit Sitz in Deutschland.",
+  langdock:"Mehrere KI-Modelle unter einem Firmen-Login, Plattform in der EU. Gut, um verschiedene KIs im Team zu testen.",
+  aleph:"Für grössere Firmen, die KI im eigenen Rechenzentrum betreiben wollen."
+};
+
+const T = {
+  privat:{eyebrow:"KI-Assistenten einfach erklärt", h1:"Welche KI passt zu mir?",
+    lead:"ChatGPT, Claude, Gemini und Co. ändern sich fast wöchentlich. Hier steht in einfachen Worten, was jeder Anbieter gut kann, was er kostet und was gerade neu ist.",
+    note:"Preise für Privatpersonen, pro Monat", eu:"Weniger bekannt, aber interessant, wenn dir wichtig ist, wo deine Daten liegen."},
+  firma:{eyebrow:"KI für KMU in der Schweiz", h1:"Welche KI passt zu unserer Firma?",
+    lead:"Welche KI darf ins Team? Hier seht ihr auf einen Blick, was die Anbieter für Firmen kosten, wo eure Daten verarbeitet werden und ob damit trainiert wird.",
+    note:"Preise pro Benutzer und Monat", eu:"Für Firmen mit Kundendaten oft die erste Wahl. Achtung: „europäisch“ heisst nicht immer, dass alle Daten in Europa bleiben."}
+};
+
+function card(p, top){
+  const price = mode==="privat" ? p.privat : p.firma;
+  const el = document.createElement("article");
+  el.className = "card" + (p.id===top ? " match" : "");
+  const labels = ["Firmensitz","Daten","Training"];
+  const extra = mode==="firma"
+    ? `<ul class="ampel" aria-label="Datenschutz-Ampel">${p.amp.map((a,i)=>`<li><i class="dot ${a[0]}" aria-hidden="true"></i><span class="l">${labels[i]}</span><span>${a[1]}</span></li>`).join("")}</ul>`
+    : `<div class="privacy"><b>Datenschutz:</b> ${p.data}</div>`;
+  el.innerHTML = `
+    <div class="card-top"><div><h3>${p.name}</h3><div class="maker">${p.maker}</div></div>
+    ${p.id===top?'<span class="tag">Passt zu euch</span>':''}</div>
+    <p class="best">${p.best}</p>
+    <dl><dt>Gratis</dt><dd>${p.free}</dd><dt>${mode==="privat"?"Abo":"Firma"}</dt><dd>${price[0]}</dd><dt>Mehr</dt><dd>${price[1]}</dd></dl>
+    ${extra}
+    <a class="more" href="${p.url}" target="_blank" rel="noopener">Zur Anbieterseite →</a>`;
+  if(mode==="privat") el.querySelector(".tag")?.replaceChildren("Passt zu dir");
+  return el;
+}
+
+function render(){
+  const ranked = score();
+  const top = ranked[0].id;
+  const byId = Object.fromEntries(P.map(p=>[p.id,p]));
+  const t = T[mode];
+  document.getElementById("pick").textContent = byId[top].name;
+  document.getElementById("why").textContent = reasons[top];
+  document.getElementById("tags").replaceChildren(...ranked[0].why.map(w=>{const s=document.createElement("span");s.textContent=w;return s;}));
+  document.getElementById("alt").textContent = "Ebenfalls passend: " + ranked.slice(1,3).map(r=>byId[r.id].name + (r.why[0]?" ("+r.why[0]+")":"")).join(", ") + ".";
+  document.querySelectorAll("[data-only]").forEach(el=>{ el.hidden = el.dataset.only!==mode; });
+  document.getElementById("eyebrow").textContent = t.eyebrow;
+  document.getElementById("h1").textContent = t.h1;
+  document.getElementById("lead").textContent = t.lead;
+  document.getElementById("mode-note").textContent = t.note;
+  document.getElementById("eu-note").textContent = t.eu;
+  const f = mode==="firma";
+  document.getElementById("q1").textContent = f ? "Wofür wollt ihr KI vor allem nutzen?" : "Wofür willst du KI vor allem nutzen?";
+  document.getElementById("q2").textContent = f ? "Wo sollen eure Daten verarbeitet werden?" : "Wo sollen deine Daten verarbeitet werden?";
+  document.getElementById("q3").textContent = f ? "Welche Programme nutzt ihr schon?" : "Welche Programme nutzt du schon?";
+  document.getElementById("legend").hidden = mode!=="firma";
+  document.getElementById("checklist").hidden = mode!=="firma";
+  ["int","eu"].forEach(g=>{
+    const grid = document.getElementById("grid-"+g);
+    grid.replaceChildren(...P.filter(p=>p.group===g && p.modes.includes(mode)).map(p=>card(p, top)));
+  });
+}
+
+document.querySelectorAll(".chips").forEach(g=>{
+  g.addEventListener("click",e=>{
+    const b = e.target.closest("button"); if(!b) return;
+    g.querySelectorAll("button").forEach(x=>x.setAttribute("aria-pressed", x===b?"true":"false"));
+    ans[g.dataset.q] = b.dataset.v; render();
+  });
+});
+document.querySelectorAll(".seg button").forEach(b=>{
+  b.addEventListener("click",()=>{
+    mode = b.dataset.mode;
+    document.querySelectorAll(".seg button").forEach(x=>x.setAttribute("aria-pressed", x===b?"true":"false"));
+    try{localStorage.setItem("kk-mode",mode)}catch(e){}
+    render();
+  });
+});
+try{const m=localStorage.getItem("kk-mode"); if(m==="firma"){document.getElementById("m-firma").click()}}catch(e){}
+
+// News: aus data/news.json (wird täglich aktualisiert)
+let NEWS = null, tab = "heute";
+const esc = t => String(t ?? "").replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const fmt = d => d ? new Date(d+"T12:00:00").toLocaleDateString("de-CH",{weekday:"long",day:"numeric",month:"long"}) : "";
+function renderNews(){
+  const list = document.getElementById("news-list");
+  if(!NEWS){ return; }
+  const day = NEWS.tage.find(t=>t.key===tab);
+  document.querySelectorAll(".tabs button").forEach(b=>{
+    const d = NEWS.tage.find(t=>t.key===b.dataset.tab);
+    b.setAttribute("aria-selected", b.dataset.tab===tab ? "true":"false");
+    b.innerHTML = esc(d ? d.label : b.textContent) + (d && d.datum ? "<small>"+esc(d.datum.slice(8,10)+"."+d.datum.slice(5,7)+".")+"</small>" : "");
+  });
+  if(!day || !day.items.length){ list.innerHTML = '<li class="news-empty">Für diesen Tag gibt es noch keine Meldungen.</li>'; return; }
+  list.innerHTML = day.items.map(n=>`<li><time>${esc(n.datum)}</time><div>
+    <div class="who">${esc(n.firma)}<span class="cat">${esc(n.kategorie)}</span></div>
+    <h3>${esc(n.titel)}</h3><p>${esc(n.text)}</p>
+    <a href="${esc(n.quelle.url)}" target="_blank" rel="noopener">Quelle: ${esc(n.quelle.name)}</a></div></li>`).join("");
+}
+document.querySelectorAll(".tabs button").forEach(b=>b.addEventListener("click",()=>{tab=b.dataset.tab; renderNews();}));
+fetch("data/news.json",{cache:"no-store"}).then(r=>{ if(!r.ok) throw new Error(r.status); return r.json(); })
+  .then(d=>{ NEWS=d; document.getElementById("news-stand").textContent = "Stand: " + fmt(d.stand); renderNews(); })
+  .catch(()=>{ document.getElementById("news-list").innerHTML = '<li class="news-empty">Die Meldungen konnten nicht geladen werden. Bitte später nochmals versuchen.</li>'; });
+render();
+</script>
