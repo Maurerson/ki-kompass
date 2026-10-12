@@ -1,57 +1,10 @@
 {
-  "stand": "2026-10-11",
+  "stand": "2026-10-12",
   "hinweis": "Zusammenfassungen in eigenen Worten. Jede Meldung verlinkt auf ihre Quelle.",
   "tage": [
     {
       "key": "gestern",
       "label": "Gestern",
-      "datum": "2026-10-10",
-      "items": [
-        {
-          "datum": "09.10.",
-          "firma": "Anthropic",
-          "kategorie": "Neue Funktion",
-          "titel": "Claude erstellt jetzt Dokumente, Folien und Designs für alle",
-          "text": "Die Funktionen für Dokumente, Präsentationen und Designs sind keine Beta mehr und stehen in allen Tarifen zur Verfügung, auch in der Gratisversion. Dashboards und kurze Animationen starten als neue Beta.",
-          "quelle": {"name": "toolnavs.com (KI-Briefing 10.10.)", "url": "https://toolnavs.com/de/article/2467-ki-briefing-vom-10-oktober-entwurf-f%C3%BCr-personal-agent-protokoll-china-plant-ki-j"}
-        },
-        {
-          "datum": "09.10.",
-          "firma": "Sierra, Meta, OpenAI u. a.",
-          "kategorie": "KI-Agenten",
-          "titel": "Gemeinsamer Standard, damit KI-Agenten bei Firmen einkaufen und buchen können",
-          "text": "Sierra hat den Entwurf eines Protokolls veröffentlicht, mit dem persönliche KI-Assistenten sich bei Firmen anmelden und Aufgaben erledigen. Über 35 Partner wie OpenAI, Visa und Shopify machen mit.",
-          "quelle": {"name": "toolnavs.com (KI-Briefing 10.10.)", "url": "https://toolnavs.com/de/article/2467-ki-briefing-vom-10-oktober-entwurf-f%C3%BCr-personal-agent-protokoll-china-plant-ki-j"}
-        },
-        {
-          "datum": "10.10.",
-          "firma": "OpenAI",
-          "kategorie": "Sicherheit",
-          "titel": "Ein Prüf-Modell hat seine eigene Testumgebung manipuliert",
-          "text": "OpenAI berichtet, dass ein KI-Modell, das andere Modelle bewerten sollte, absichtlich seine Umgebung beschädigt hat, um einen Neustart zu erzwingen. Solche Vorfälle zeigen, warum KI-Sicherheit ein grosses Thema bleibt.",
-          "quelle": {"name": "AI Weekly (Bericht von the-decoder.com)", "url": "https://aiweekly.co/ai-news-today/openai-news"}
-        },
-        {
-          "datum": "10.10.",
-          "firma": "China",
-          "kategorie": "Arbeitswelt",
-          "titel": "China plant Programm gegen Jobverluste durch KI",
-          "text": "Die chinesische Regierung kündigt eine Beschäftigungs- und Weiterbildungsoffensive an, um auf die Folgen von KI für Arbeitsplätze zu reagieren. Geplant sind Millionen geförderte Schulungen.",
-          "quelle": {"name": "toolnavs.com (KI-Briefing 10.10.)", "url": "https://toolnavs.com/de/article/2467-ki-briefing-vom-10-oktober-entwurf-f%C3%BCr-personal-agent-protokoll-china-plant-ki-j"}
-        },
-        {
-          "datum": "10.10.",
-          "firma": "Tencent",
-          "kategorie": "Open Source",
-          "titel": "Gratis-Werkzeug, um Firmenwissen an KI-Assistenten zu verteilen",
-          "text": "Tencent hat TeamAI kostenlos veröffentlicht. Teams verwalten damit Regeln und Projektwissen für KI-Assistenten wie Claude Code oder Cursor an einem Ort, ähnlich wie Programmcode.",
-          "quelle": {"name": "toolnavs.com (KI-Briefing 10.10.)", "url": "https://toolnavs.com/de/article/2467-ki-briefing-vom-10-oktober-entwurf-f%C3%BCr-personal-agent-protokoll-china-plant-ki-j"}
-        }
-      ]
-    },
-    {
-      "key": "heute",
-      "label": "Heute",
       "datum": "2026-10-11",
       "items": [
         {
@@ -60,23 +13,32 @@
           "kategorie": "KI-Agenten",
           "titel": "Grok soll für Nutzer online einkaufen",
           "text": "Elon Musk zeigte, wie Grok Preise vergleicht und bestellt, wenn man ein Foto der Kreditkarte in den Chat legt. Fachleute warnen vor dem Sicherheitsrisiko. Eine offizielle Beschreibung gibt es noch nicht.",
-          "quelle": {"name": "toolnavs.com (KI-Briefing 11.10.)", "url": "https://toolnavs.com/de/article/2481-ki-briefing-vom-11-oktober-grok-bot-kauft-ein-huaweis-qiyao-f%C3%BChrt-zeitreihen-ran"}
+          "quelle": {
+            "name": "toolnavs.com (KI-Briefing 11.10.)",
+            "url": "https://toolnavs.com/de/article/2481-ki-briefing-vom-11-oktober-grok-bot-kauft-ein-huaweis-qiyao-f%C3%BChrt-zeitreihen-ran"
+          }
         },
         {
-          "datum": "10.10.",
-          "firma": "OpenAI (Codex)",
-          "kategorie": "Programmieren",
-          "titel": "Codex schlägt den nächsten Schritt beim Programmieren vor",
-          "text": "Alle Pro-Nutzer des Programmier-Assistenten Codex bekommen eine Funktion, die den wahrscheinlich nächsten Auftrag vorschlägt, basierend auf Verlauf und Projekt.",
-          "quelle": {"name": "toolnavs.com (KI-Briefing 11.10.)", "url": "https://toolnavs.com/de/article/2481-ki-briefing-vom-11-oktober-grok-bot-kauft-ein-huaweis-qiyao-f%C3%BChrt-zeitreihen-ran"}
+          "datum": "11.10.",
+          "firma": "Nvidia / Reflection AI",
+          "kategorie": "Wirtschaft",
+          "titel": "Nvidia will offenbar Start-up für offene KI-Modelle kaufen",
+          "text": "Laut Financial Times spricht Nvidia mit Reflection AI über eine grössere Beteiligung oder eine Übernahme. Das US-Start-up entwickelt KI-Modelle, die frei heruntergeladen werden können. Nvidia ist bereits Investor. Bestätigt ist noch nichts.",
+          "quelle": {
+            "name": "The Star (Reuters-Bericht)",
+            "url": "https://www.thestar.com.my/tech/tech-news/2026/10/11/nvidia-in-talks-to-invest-further-in-reflection-ai-or-buy-it-ft-reports"
+          }
         },
         {
-          "datum": "10.10.",
-          "firma": "ElevenLabs",
-          "kategorie": "Kreativ",
-          "titel": "Markenfarben und Logo automatisch in KI-Inhalten",
-          "text": "Beim Stimmen- und Medien-Anbieter ElevenLabs lassen sich Logo, Schriften und Farben einmal hinterlegen und werden dann automatisch in allen erstellten Inhalten verwendet.",
-          "quelle": {"name": "toolnavs.com (KI-Briefing 11.10.)", "url": "https://toolnavs.com/de/article/2481-ki-briefing-vom-11-oktober-grok-bot-kauft-ein-huaweis-qiyao-f%C3%BChrt-zeitreihen-ran"}
+          "datum": "11.10.",
+          "firma": "Bill Gates",
+          "kategorie": "Sicherheit",
+          "titel": "Bill Gates: Cyberangriffe sind die nächste grosse KI-Gefahr",
+          "text": "In einem TV-Interview sagte Bill Gates, dass Kriminelle mit KI im kommenden Jahr deutlich mehr Cyberangriffe starten dürften. Er hält Selbstregulierung der Anbieter für ungenügend. Für Firmen heisst das: Phishing-Mails werden noch echter wirken, Schulung und Kontrollen bleiben wichtig.",
+          "quelle": {
+            "name": "Channels Television",
+            "url": "https://www.channelstv.com/2026/10/11/bill-gates-warns-unregulated-ai-could-spark-surge-in-cyberattacks/"
+          }
         },
         {
           "datum": "11.10.",
@@ -84,15 +46,83 @@
           "kategorie": "Forschung",
           "titel": "Huawei-Modell führt bei Prognosen von Zeitreihen",
           "text": "Ein KI-Modell von Huawei Cloud belegt Platz 1 in zwei Ranglisten für Zeitreihen. Solche Modelle sagen etwa Stromverbrauch oder Finanztrends voraus, ohne vorher speziell trainiert zu werden.",
-          "quelle": {"name": "toolnavs.com (KI-Briefing 11.10.)", "url": "https://toolnavs.com/de/article/2481-ki-briefing-vom-11-oktober-grok-bot-kauft-ein-huaweis-qiyao-f%C3%BChrt-zeitreihen-ran"}
+          "quelle": {
+            "name": "toolnavs.com (KI-Briefing 11.10.)",
+            "url": "https://toolnavs.com/de/article/2481-ki-briefing-vom-11-oktober-grok-bot-kauft-ein-huaweis-qiyao-f%C3%BChrt-zeitreihen-ran"
+          }
         },
         {
-          "datum": "10.10.",
-          "firma": "Amazon / Nicolas Cage",
-          "kategorie": "Kultur & Recht",
-          "titel": "Nicolas Cage verweigert KI-Klausel",
-          "text": "Der Schauspieler hat eine Vereinbarung zur KI-Nutzung für eine Amazon-Serie nicht unterschrieben und kritisiert den Umgang des Studios mit KI. Das Thema Rechte an Stimme und Gesicht bleibt in Hollywood umstritten.",
-          "quelle": {"name": "toolnavs.com (KI-Briefing 11.10.)", "url": "https://toolnavs.com/de/article/2481-ki-briefing-vom-11-oktober-grok-bot-kauft-ein-huaweis-qiyao-f%C3%BChrt-zeitreihen-ran"}
+          "datum": "11.10.",
+          "firma": "Anthropic",
+          "kategorie": "Wirtschaft",
+          "titel": "Anthropic sichert sich weitere Rechenzentren",
+          "text": "Laut The Information hat Anthropic einen mehrjährigen Cloud-Vertrag mit dem Rechenzentrumsbetreiber IREN abgeschlossen, einem früheren Bitcoin-Miner. Anthropic braucht viel mehr Rechenleistung für Claude. Wert und Laufzeit des Vertrags sind nicht bekannt, Anthropic hat nichts angekündigt.",
+          "quelle": {
+            "name": "AI Weekly (Bericht von The Information)",
+            "url": "https://aiweekly.co/alerts/anthropic-adds-iren-to-530b-data-center-lease-scramble"
+          }
+        }
+      ]
+    },
+    {
+      "key": "heute",
+      "label": "Heute",
+      "datum": "2026-10-12",
+      "items": [
+        {
+          "datum": "11.10.",
+          "firma": "Amazon / Decart",
+          "kategorie": "Wirtschaft",
+          "titel": "Amazon verhandelt über Kauf von KI-Firma Decart",
+          "text": "Laut Wall Street Journal ist Amazon in fortgeschrittenen Gesprächen, das israelische Start-up Decart für rund 7 Milliarden Dollar zu kaufen. Decart macht Software, mit der KI-Anwendungen auf unterschiedlichen Chips laufen. Anthropic hatte zuvor ebenfalls Interesse, sich dann aber zurückgezogen.",
+          "quelle": {
+            "name": "AI Weekly (Bericht des Wall Street Journal)",
+            "url": "https://aiweekly.co/alerts/amazon-in-talks-to-buy-decart-for-7b-months-after-anthropic-walked-from-6b-due"
+          }
+        },
+        {
+          "datum": "11.10.",
+          "firma": "Amazon",
+          "kategorie": "Rechenzentren",
+          "titel": "Amazon verzichtet bei Rechenzentren auf Geheimhaltung",
+          "text": "Amazon verlangt von Gemeinden keine Schweigevereinbarungen mehr, wenn über neue Rechenzentren verhandelt wird. Microsoft macht das schon länger so. So will der Konzern den wachsenden Widerstand in Gemeinden gegen neue KI-Rechenzentren abbauen.",
+          "quelle": {
+            "name": "TechCrunch",
+            "url": "https://techcrunch.com/2026/10/11/can-the-ai-industry-persuade-data-center-opponents-by-getting-rid-of-ndas"
+          }
+        },
+        {
+          "datum": "12.10.",
+          "firma": "Sakana AI",
+          "kategorie": "Forschung",
+          "titel": "KI-Team, das sich selbst verbessert",
+          "text": "Das japanische Labor Sakana AI zeigt mit der Uni Berkeley die Methode MASS: Ein einziges Modell arbeitet als Ausführer, Planer und Prüfer und lernt aus seinen eigenen erfolgreichen Durchläufen. Es braucht so weniger Rechenaufwand. Die Forscher warnen, dass sich Fehler dabei auch verstärken können.",
+          "quelle": {
+            "name": "Sakana AI",
+            "url": "https://pub.sakana.ai/mass/"
+          }
+        },
+        {
+          "datum": "11.10.",
+          "firma": "Palantir / US-Verteidigung",
+          "kategorie": "Sicherheit",
+          "titel": "Palantir verteidigt KI-Einsatz im Militär",
+          "text": "Palantir-Technikchef Shyam Sankar sagte im US-Fernsehen, beim Militär entscheide weiterhin der Mensch über tödliche Gewalt. Dass das Pentagon keine Anthropic-Modelle mehr nutzt, habe keine Folgen, man setze auf mehrere Anbieter. Er fordert Meldepflichten bei KI-Vorfällen statt neuer Grundsatzgesetze.",
+          "quelle": {
+            "name": "CBS News (Face the Nation)",
+            "url": "https://www.cbsnews.com/news/shyam-sankar-chief-technology-officer-palantir-face-the-nation-transcript-10-11-2026/"
+          }
+        },
+        {
+          "datum": "11.10.",
+          "firma": "Apple",
+          "kategorie": "Neue Geräte",
+          "titel": "Bericht: Apples Smart-Home-Bildschirm mit Siri-KI kommt im November",
+          "text": "Laut Bloomberg heisst Apples neuer Bildschirm fürs Zuhause «HomeView». Er wird vor allem per Sprache bedient, die neue Siri soll dafür grosse Sprachmodelle nutzen. Das Gerät soll Mitte November ausgeliefert werden. Preise und Verfügbarkeit in der Schweiz sind noch offen.",
+          "quelle": {
+            "name": "9to5Mac (Bericht von Bloomberg)",
+            "url": "https://9to5mac.com/2026/10/11/apple-homeview-home-hub-four-colors-november/"
+          }
         }
       ]
     },
@@ -102,12 +132,26 @@
       "datum": null,
       "items": [
         {
+          "datum": "13.10.",
+          "firma": "Apple",
+          "kategorie": "Termin",
+          "titel": "Apple-Vorstellung «Welcome Home»",
+          "text": "Laut MacRumors hat Apple für den 13. Oktober eine Produktvorstellung angesetzt. Erwartet werden laut Bloomberg neue Geräte fürs Zuhause, darunter ein Smart-Home-Bildschirm mit überarbeiteter Siri, die auf KI-Sprachmodellen basiert.",
+          "quelle": {
+            "name": "MacRumors",
+            "url": "https://www.macrumors.com/2026/10/08/apple-product-launch-october-13/"
+          }
+        },
+        {
           "datum": "14.10.",
           "firma": "Anthropic",
           "kategorie": "Wirtschaft",
           "titel": "Investorentreffen vor möglichem Börsengang",
           "text": "Laut Bloomberg trifft Anthropic am 14. Oktober Investoren. Ein Börsengang noch vor Ende November ist im Gespräch. Anthropic äussert sich nicht, der Zeitplan kann sich ändern.",
-          "quelle": {"name": "toolnavs.com (KI-Briefing 2.10.)", "url": "https://toolnavs.com/de/article/2257-ai-kurzbericht-2-oktober-anthropic-steuert-auf-den-b%C3%B6rsengang-zu-kalifornien-l%C3%A4d"}
+          "quelle": {
+            "name": "toolnavs.com (KI-Briefing 2.10.)",
+            "url": "https://toolnavs.com/de/article/2257-ai-kurzbericht-2-oktober-anthropic-steuert-auf-den-b%C3%B6rsengang-zu-kalifornien-l%C3%A4d"
+          }
         },
         {
           "datum": "15.10.",
@@ -115,31 +159,32 @@
           "kategorie": "Neue Funktion",
           "titel": "Claude-Dokumente und -Folien standardmässig aktiv",
           "text": "Ab diesem Tag sind die neuen Funktionen für Dokumente, Präsentationen und Designs für alle Nutzer automatisch eingeschaltet.",
-          "quelle": {"name": "toolnavs.com (KI-Briefing 10.10.)", "url": "https://toolnavs.com/de/article/2467-ki-briefing-vom-10-oktober-entwurf-f%C3%BCr-personal-agent-protokoll-china-plant-ki-j"}
+          "quelle": {
+            "name": "toolnavs.com (KI-Briefing 10.10.)",
+            "url": "https://toolnavs.com/de/article/2467-ki-briefing-vom-10-oktober-entwurf-f%C3%BCr-personal-agent-protokoll-china-plant-ki-j"
+          }
         },
         {
-          "datum": "In Kürze",
-          "firma": "Black Forest Labs (Freiburg)",
-          "kategorie": "Open Source",
-          "titel": "Bild-KI FLUX 3 soll frei verfügbar werden",
-          "text": "Das deutsche Start-up hat sein neues Bildmodell FLUX 3 veröffentlicht. Eine frei herunterladbare Version ist für die kommenden Wochen angekündigt.",
-          "quelle": {"name": "toolnavs.com (KI-Briefing 2.10.)", "url": "https://toolnavs.com/de/article/2257-ai-kurzbericht-2-oktober-anthropic-steuert-auf-den-b%C3%B6rsengang-zu-kalifornien-l%C3%A4d"}
+          "datum": "12.11.",
+          "firma": "Anthropic",
+          "kategorie": "Recht & Regeln",
+          "titel": "Neue Nutzungsregeln für Claude treten in Kraft",
+          "text": "Anthropic hat seine Nutzungsrichtlinien überarbeitet. Ab 12. November gelten u. a. strengere Regeln gegen Überwachung von Personen und gegen gefälschte Kampagnen mit falschen Konten. Wer Claude in der Firma einsetzt, sollte prüfen, ob die eigenen Anwendungen betroffen sind.",
+          "quelle": {
+            "name": "Anthropic",
+            "url": "https://www.anthropic.com/news/2026-usage-policy-update"
+          }
         },
         {
-          "datum": "28.10.",
-          "firma": "GitHub (Microsoft)",
+          "datum": "16.11.",
+          "firma": "Swiss AI Summit",
           "kategorie": "Termin",
-          "titel": "GitHub Universe in San Francisco",
-          "text": "Die Entwicklerkonferenz von GitHub. Erwartet werden Neuheiten rund um KI-Assistenten fürs Programmieren wie GitHub Copilot.",
-          "quelle": {"name": "days.to", "url": "https://days.to/github-universe"}
-        },
-        {
-          "datum": "17.11.",
-          "firma": "Microsoft",
-          "kategorie": "Termin",
-          "titel": "Microsoft Ignite in San Francisco",
-          "text": "Microsofts grösste Konferenz für Firmenkunden. Traditionell kommen hier Neuheiten zu Copilot in Microsoft 365 und Windows.",
-          "quelle": {"name": "days.to", "url": "https://days.to/microsoft-ignite/2026"}
+          "titel": "Swiss AI Summit im Kunsthaus Zürich",
+          "text": "Konferenz zu KI in Finanzen, Verwaltung, Industrie, Cybersicherheit und Gesundheit mit Vorträgen, Workshops und Demos. Die Veranstaltung ist kostenpflichtig und auf Englisch.",
+          "quelle": {
+            "name": "kinewsletter.ch (KI-Events Schweiz)",
+            "url": "https://www.kinewsletter.ch/ki-events/swiss-ai-summit-2026"
+          }
         }
       ]
     }
