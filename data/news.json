@@ -1,65 +1,65 @@
 {
-  "stand": "2026-10-12",
+  "stand": "2026-10-13",
   "hinweis": "Zusammenfassungen in eigenen Worten. Jede Meldung verlinkt auf ihre Quelle.",
   "tage": [
     {
       "key": "gestern",
       "label": "Gestern",
-      "datum": "2026-10-11",
+      "datum": "2026-10-12",
       "items": [
         {
-          "datum": "11.10.",
-          "firma": "xAI (Grok)",
-          "kategorie": "KI-Agenten",
-          "titel": "Grok soll für Nutzer online einkaufen",
-          "text": "Elon Musk zeigte, wie Grok Preise vergleicht und bestellt, wenn man ein Foto der Kreditkarte in den Chat legt. Fachleute warnen vor dem Sicherheitsrisiko. Eine offizielle Beschreibung gibt es noch nicht.",
+          "datum": "12.10.",
+          "firma": "Meta",
+          "kategorie": "Modelle",
+          "titel": "Meta stellt sein bisher stärkstes KI-Modell vor",
+          "text": "Meta hat «Muse Wonder» veröffentlicht, das erste Spitzenmodell seines neuen Superintelligenz-Labors. Laut eigenen Tests liegt es etwa auf dem Niveau der besten Modelle der Konkurrenz und soll sich Informationen von Nutzern besonders gut merken. Entwickler können es kostenpflichtig über Metas Schnittstelle nutzen, die stärkere Variante gibt es nur im Abo.",
           "quelle": {
-            "name": "toolnavs.com (KI-Briefing 11.10.)",
-            "url": "https://toolnavs.com/de/article/2481-ki-briefing-vom-11-oktober-grok-bot-kauft-ein-huaweis-qiyao-f%C3%BChrt-zeitreihen-ran"
+            "name": "TechCrunch",
+            "url": "https://techcrunch.com/2026/10/12/meta-releases-its-first-frontier-model-muse-wonder/"
           }
         },
         {
-          "datum": "11.10.",
-          "firma": "Nvidia / Reflection AI",
-          "kategorie": "Wirtschaft",
-          "titel": "Nvidia will offenbar Start-up für offene KI-Modelle kaufen",
-          "text": "Laut Financial Times spricht Nvidia mit Reflection AI über eine grössere Beteiligung oder eine Übernahme. Das US-Start-up entwickelt KI-Modelle, die frei heruntergeladen werden können. Nvidia ist bereits Investor. Bestätigt ist noch nichts.",
-          "quelle": {
-            "name": "The Star (Reuters-Bericht)",
-            "url": "https://www.thestar.com.my/tech/tech-news/2026/10/11/nvidia-in-talks-to-invest-further-in-reflection-ai-or-buy-it-ft-reports"
-          }
-        },
-        {
-          "datum": "11.10.",
-          "firma": "Bill Gates",
-          "kategorie": "Sicherheit",
-          "titel": "Bill Gates: Cyberangriffe sind die nächste grosse KI-Gefahr",
-          "text": "In einem TV-Interview sagte Bill Gates, dass Kriminelle mit KI im kommenden Jahr deutlich mehr Cyberangriffe starten dürften. Er hält Selbstregulierung der Anbieter für ungenügend. Für Firmen heisst das: Phishing-Mails werden noch echter wirken, Schulung und Kontrollen bleiben wichtig.",
-          "quelle": {
-            "name": "Channels Television",
-            "url": "https://www.channelstv.com/2026/10/11/bill-gates-warns-unregulated-ai-could-spark-surge-in-cyberattacks/"
-          }
-        },
-        {
-          "datum": "11.10.",
-          "firma": "Huawei",
-          "kategorie": "Forschung",
-          "titel": "Huawei-Modell führt bei Prognosen von Zeitreihen",
-          "text": "Ein KI-Modell von Huawei Cloud belegt Platz 1 in zwei Ranglisten für Zeitreihen. Solche Modelle sagen etwa Stromverbrauch oder Finanztrends voraus, ohne vorher speziell trainiert zu werden.",
-          "quelle": {
-            "name": "toolnavs.com (KI-Briefing 11.10.)",
-            "url": "https://toolnavs.com/de/article/2481-ki-briefing-vom-11-oktober-grok-bot-kauft-ein-huaweis-qiyao-f%C3%BChrt-zeitreihen-ran"
-          }
-        },
-        {
-          "datum": "11.10.",
+          "datum": "12.10.",
           "firma": "Anthropic",
-          "kategorie": "Wirtschaft",
-          "titel": "Anthropic sichert sich weitere Rechenzentren",
-          "text": "Laut The Information hat Anthropic einen mehrjährigen Cloud-Vertrag mit dem Rechenzentrumsbetreiber IREN abgeschlossen, einem früheren Bitcoin-Miner. Anthropic braucht viel mehr Rechenleistung für Claude. Wert und Laufzeit des Vertrags sind nicht bekannt, Anthropic hat nichts angekündigt.",
+          "kategorie": "Sicherheit",
+          "titel": "Studie: Kleine KI-Modelle könnten sich bald selbst verbreiten",
+          "text": "Das Sicherheitsteam von Anthropic hat getestet, ob frei verfügbare KI-Modelle sich selbst auf billige Geräte wie TV-Boxen kopieren können. Das Ergebnis: Ein grösseres offenes Modell schaffte es bereits, kleinere könnten in einigen Monaten so weit sein. Das ist eine Hochrechnung, kein Angriff. Schlecht gesicherte Geräte im Netz bleiben ein Risiko.",
           "quelle": {
-            "name": "AI Weekly (Bericht von The Information)",
-            "url": "https://aiweekly.co/alerts/anthropic-adds-iren-to-530b-data-center-lease-scramble"
+            "name": "Anthropic (Forschungsbericht)",
+            "url": "https://www.anthropic.com/research/self-replicating-ai"
+          }
+        },
+        {
+          "datum": "12.10.",
+          "firma": "Anthropic",
+          "kategorie": "Sicherheit",
+          "titel": "Anthropic bremst das Abkupfern von Claude",
+          "text": "Konkurrenten versuchen, Claude mit massenhaft Anfragen auszufragen, um eigene Modelle billiger zu trainieren. Anthropic hat dagegen den Zugriff auf Claudes Denkschritte eingeschränkt und zehntausende Konten gesperrt. So sei 90 bis 99 Prozent weniger Material abgeflossen. Normale Nutzer sollen davon kaum etwas merken.",
+          "quelle": {
+            "name": "Reuters (via 93.3 The Drive)",
+            "url": "https://www.933thedrive.com/2026/10/12/anthropic-says-new-safeguards-sharply-reduce-ai-distillation-attacks/"
+          }
+        },
+        {
+          "datum": "12.10.",
+          "firma": "Microsoft",
+          "kategorie": "Hardware",
+          "titel": "Microsoft zeigt eigenen KI-Chip Maia 300",
+          "text": "Microsoft hat die dritte Generation seines hauseigenen KI-Chips vorgestellt. Er soll Dienste wie Copilot und GitHub Copilot antreiben und pro Rechenschrank bis zu siebenmal mehr Text erzeugen als der Vorgänger. Ziel ist, weniger von Nvidia abhängig zu sein. Für Nutzer heisst das langfristig: mehr Rechenleistung, eventuell tiefere Kosten.",
+          "quelle": {
+            "name": "Microsoft Azure Blog",
+            "url": "https://azure.microsoft.com/en-us/blog/deep-dive-into-azure-maia-300-architecture/"
+          }
+        },
+        {
+          "datum": "12.10.",
+          "firma": "Ambi",
+          "kategorie": "Datenschutz",
+          "titel": "KI-App, die im Hintergrund mithört",
+          "text": "Das Start-up Ambi hat 26 Millionen Dollar erhalten. Seine App für iPhone, Mac und Apple Watch hört auf Wunsch laufend zu und liefert etwa in Sitzungen passende Infos. Das Mithören ist standardmässig aus. Wichtig: Wer so etwas nutzt, muss andere Anwesende informieren. In der Schweiz ist das Aufnehmen von Gesprächen ohne Einwilligung verboten.",
+          "quelle": {
+            "name": "TechCrunch",
+            "url": "https://techcrunch.com/2026/10/12/former-plaud-exec-raises-26m-for-ai-app-that-listens-to-you-in-the-background/"
           }
         }
       ]
@@ -67,61 +67,61 @@
     {
       "key": "heute",
       "label": "Heute",
-      "datum": "2026-10-12",
+      "datum": "2026-10-13",
       "items": [
         {
-          "datum": "11.10.",
-          "firma": "Amazon / Decart",
-          "kategorie": "Wirtschaft",
-          "titel": "Amazon verhandelt über Kauf von KI-Firma Decart",
-          "text": "Laut Wall Street Journal ist Amazon in fortgeschrittenen Gesprächen, das israelische Start-up Decart für rund 7 Milliarden Dollar zu kaufen. Decart macht Software, mit der KI-Anwendungen auf unterschiedlichen Chips laufen. Anthropic hatte zuvor ebenfalls Interesse, sich dann aber zurückgezogen.",
+          "datum": "13.10.",
+          "firma": "Apple",
+          "kategorie": "Neue Geräte",
+          "titel": "Apple zeigt heute neue Geräte fürs Zuhause",
+          "text": "Apple hat für heute eine Vorstellung unter dem Motto «Welcome home» bestätigt. Laut Bloomberg kommen ein Smart-Home-Bildschirm, eine neue Apple TV und ein neuer HomePod mini, alle mit der überarbeiteten, KI-gestützten Siri. Was genau gezeigt wird und ab wann es in der Schweiz erhältlich ist, wird erst nach der Präsentation klar.",
           "quelle": {
-            "name": "AI Weekly (Bericht des Wall Street Journal)",
-            "url": "https://aiweekly.co/alerts/amazon-in-talks-to-buy-decart-for-7b-months-after-anthropic-walked-from-6b-due"
+            "name": "9to5Mac",
+            "url": "https://9to5mac.com/2026/10/12/apple-welcome-home-event-three-new-products/"
           }
         },
         {
-          "datum": "11.10.",
-          "firma": "Amazon",
+          "datum": "13.10.",
+          "firma": "Anthropic / NTT Data",
           "kategorie": "Rechenzentren",
-          "titel": "Amazon verzichtet bei Rechenzentren auf Geheimhaltung",
-          "text": "Amazon verlangt von Gemeinden keine Schweigevereinbarungen mehr, wenn über neue Rechenzentren verhandelt wird. Microsoft macht das schon länger so. So will der Konzern den wachsenden Widerstand in Gemeinden gegen neue KI-Rechenzentren abbauen.",
+          "titel": "Anthropic plant erstes Rechenzentrum in Japan",
+          "text": "Laut Nikkei Asia steht NTT Data kurz vor einer Einigung, für Anthropic in Osaka ein grosses Rechenzentrum zu bauen. Es könnte rund 6,3 Milliarden Dollar kosten und ab 2028 teilweise laufen. Unterschrieben ist noch nichts. Anthropic sucht weltweit nach Rechenleistung, weil die Nachfrage nach Claude stark wächst.",
           "quelle": {
-            "name": "TechCrunch",
-            "url": "https://techcrunch.com/2026/10/11/can-the-ai-industry-persuade-data-center-opponents-by-getting-rid-of-ndas"
+            "name": "Nikkei Asia",
+            "url": "https://asia.nikkei.com/business/technology/artificial-intelligence/ntt-to-build-first-data-center-for-anthropic-in-japan"
+          }
+        },
+        {
+          "datum": "13.10.",
+          "firma": "Omron",
+          "kategorie": "Wirtschaft",
+          "titel": "Omron kauft Industrie-PC-Hersteller für KI in Fabriken",
+          "text": "Der japanische Automatisierungskonzern Omron übernimmt die US-Firma OnLogic für 675 Millionen Dollar. OnLogic baut robuste Computer für Fabrikhallen. Omron will damit KI direkt an Maschinen bringen, etwa für Steuerung und Qualitätskontrolle. Solche «physische KI» wird auch für Schweizer Industriebetriebe zunehmend ein Thema.",
+          "quelle": {
+            "name": "KSL (Reuters)",
+            "url": "https://www.ksl.com/article/51635568/japans-omron-to-buy-us-industrial-pc-firmonlogic-for-675-million-in-physical-ai-push"
           }
         },
         {
           "datum": "12.10.",
-          "firma": "Sakana AI",
-          "kategorie": "Forschung",
-          "titel": "KI-Team, das sich selbst verbessert",
-          "text": "Das japanische Labor Sakana AI zeigt mit der Uni Berkeley die Methode MASS: Ein einziges Modell arbeitet als Ausführer, Planer und Prüfer und lernt aus seinen eigenen erfolgreichen Durchläufen. Es braucht so weniger Rechenaufwand. Die Forscher warnen, dass sich Fehler dabei auch verstärken können.",
+          "firma": "Intel",
+          "kategorie": "Hardware",
+          "titel": "Intel bringt Grafikkarte für KI-Anwendungen",
+          "text": "An einer Fachkonferenz in den USA hat Intel die Karte D270 vorgestellt. Sie ist auf das Ausführen von KI-Modellen ausgelegt, hat sehr viel Speicher und wird mit Luft gekühlt. Erste Kunden testen sie bereits, breit erhältlich soll sie 2027 sein. Sie ist weniger stark als Nvidias Topmodelle, soll aber günstiger sein.",
           "quelle": {
-            "name": "Sakana AI",
-            "url": "https://pub.sakana.ai/mass/"
+            "name": "AI Weekly",
+            "url": "https://aiweekly.co/alerts/intel-formally-launches-gpu-d270-at-ocp-summit-with-480gb-lpddr5x-and-13-pflops"
           }
         },
         {
-          "datum": "11.10.",
-          "firma": "Palantir / US-Verteidigung",
-          "kategorie": "Sicherheit",
-          "titel": "Palantir verteidigt KI-Einsatz im Militär",
-          "text": "Palantir-Technikchef Shyam Sankar sagte im US-Fernsehen, beim Militär entscheide weiterhin der Mensch über tödliche Gewalt. Dass das Pentagon keine Anthropic-Modelle mehr nutzt, habe keine Folgen, man setze auf mehrere Anbieter. Er fordert Meldepflichten bei KI-Vorfällen statt neuer Grundsatzgesetze.",
+          "datum": "13.10.",
+          "firma": "Scaleway",
+          "kategorie": "Termin",
+          "titel": "KI-Konferenz ai-PULSE in Paris",
+          "text": "Der französische Cloud-Anbieter Scaleway lädt heute zur KI-Konferenz ai-PULSE in der Station F in Paris. Es geht um neue Forschung, Live-Demos und europäische KI-Infrastruktur. Für Firmen, die ihre Daten lieber in Europa als bei US-Anbietern verarbeiten wollen, ist das Thema digitale Souveränität zentral.",
           "quelle": {
-            "name": "CBS News (Face the Nation)",
-            "url": "https://www.cbsnews.com/news/shyam-sankar-chief-technology-officer-palantir-face-the-nation-transcript-10-11-2026/"
-          }
-        },
-        {
-          "datum": "11.10.",
-          "firma": "Apple",
-          "kategorie": "Neue Geräte",
-          "titel": "Bericht: Apples Smart-Home-Bildschirm mit Siri-KI kommt im November",
-          "text": "Laut Bloomberg heisst Apples neuer Bildschirm fürs Zuhause «HomeView». Er wird vor allem per Sprache bedient, die neue Siri soll dafür grosse Sprachmodelle nutzen. Das Gerät soll Mitte November ausgeliefert werden. Preise und Verfügbarkeit in der Schweiz sind noch offen.",
-          "quelle": {
-            "name": "9to5Mac (Bericht von Bloomberg)",
-            "url": "https://9to5mac.com/2026/10/11/apple-homeview-home-hub-four-colors-november/"
+            "name": "createwith (Veranstaltungsübersicht)",
+            "url": "https://createwith.com/event/paris-ai-pulse-2026-october-13-2026-station-f-paris-oct-2026"
           }
         }
       ]
@@ -131,17 +131,6 @@
       "label": "Demnächst",
       "datum": null,
       "items": [
-        {
-          "datum": "13.10.",
-          "firma": "Apple",
-          "kategorie": "Termin",
-          "titel": "Apple-Vorstellung «Welcome Home»",
-          "text": "Laut MacRumors hat Apple für den 13. Oktober eine Produktvorstellung angesetzt. Erwartet werden laut Bloomberg neue Geräte fürs Zuhause, darunter ein Smart-Home-Bildschirm mit überarbeiteter Siri, die auf KI-Sprachmodellen basiert.",
-          "quelle": {
-            "name": "MacRumors",
-            "url": "https://www.macrumors.com/2026/10/08/apple-product-launch-october-13/"
-          }
-        },
         {
           "datum": "14.10.",
           "firma": "Anthropic",
@@ -162,6 +151,17 @@
           "quelle": {
             "name": "toolnavs.com (KI-Briefing 10.10.)",
             "url": "https://toolnavs.com/de/article/2467-ki-briefing-vom-10-oktober-entwurf-f%C3%BCr-personal-agent-protokoll-china-plant-ki-j"
+          }
+        },
+        {
+          "datum": "Ende Okt.",
+          "firma": "Mistral AI",
+          "kategorie": "Open Source",
+          "titel": "Mistral gibt grosses Modell frei",
+          "text": "Mistral will die Gewichte seines neuen Modells Mistral Large 4 bis Ende Oktober veröffentlichen. Dann können Firmen das Modell selbst betreiben, etwa auf eigenen Servern in Europa. Bisher gibt es nur eine kostenpflichtige Vorschau über die Schnittstelle. Die genauen Lizenzbedingungen sind noch offen.",
+          "quelle": {
+            "name": "Mistral AI",
+            "url": "https://mistral.ai/news/mistral-large-4/"
           }
         },
         {
