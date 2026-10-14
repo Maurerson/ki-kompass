@@ -1,94 +1,43 @@
 {
-  "stand": "2026-10-13",
+  "stand": "2026-10-14",
   "hinweis": "Zusammenfassungen in eigenen Worten. Jede Meldung verlinkt auf ihre Quelle.",
   "tage": [
     {
       "key": "gestern",
       "label": "Gestern",
-      "datum": "2026-10-12",
-      "items": [
-        {
-          "datum": "12.10.",
-          "firma": "Meta",
-          "kategorie": "Modelle",
-          "titel": "Meta stellt sein bisher stärkstes KI-Modell vor",
-          "text": "Meta hat «Muse Wonder» veröffentlicht, das erste Spitzenmodell seines neuen Superintelligenz-Labors. Laut eigenen Tests liegt es etwa auf dem Niveau der besten Modelle der Konkurrenz und soll sich Informationen von Nutzern besonders gut merken. Entwickler können es kostenpflichtig über Metas Schnittstelle nutzen, die stärkere Variante gibt es nur im Abo.",
-          "quelle": {
-            "name": "TechCrunch",
-            "url": "https://techcrunch.com/2026/10/12/meta-releases-its-first-frontier-model-muse-wonder/"
-          }
-        },
-        {
-          "datum": "12.10.",
-          "firma": "Anthropic",
-          "kategorie": "Sicherheit",
-          "titel": "Studie: Kleine KI-Modelle könnten sich bald selbst verbreiten",
-          "text": "Das Sicherheitsteam von Anthropic hat getestet, ob frei verfügbare KI-Modelle sich selbst auf billige Geräte wie TV-Boxen kopieren können. Das Ergebnis: Ein grösseres offenes Modell schaffte es bereits, kleinere könnten in einigen Monaten so weit sein. Das ist eine Hochrechnung, kein Angriff. Schlecht gesicherte Geräte im Netz bleiben ein Risiko.",
-          "quelle": {
-            "name": "Anthropic (Forschungsbericht)",
-            "url": "https://www.anthropic.com/research/self-replicating-ai"
-          }
-        },
-        {
-          "datum": "12.10.",
-          "firma": "Anthropic",
-          "kategorie": "Sicherheit",
-          "titel": "Anthropic bremst das Abkupfern von Claude",
-          "text": "Konkurrenten versuchen, Claude mit massenhaft Anfragen auszufragen, um eigene Modelle billiger zu trainieren. Anthropic hat dagegen den Zugriff auf Claudes Denkschritte eingeschränkt und zehntausende Konten gesperrt. So sei 90 bis 99 Prozent weniger Material abgeflossen. Normale Nutzer sollen davon kaum etwas merken.",
-          "quelle": {
-            "name": "Reuters (via 93.3 The Drive)",
-            "url": "https://www.933thedrive.com/2026/10/12/anthropic-says-new-safeguards-sharply-reduce-ai-distillation-attacks/"
-          }
-        },
-        {
-          "datum": "12.10.",
-          "firma": "Microsoft",
-          "kategorie": "Hardware",
-          "titel": "Microsoft zeigt eigenen KI-Chip Maia 300",
-          "text": "Microsoft hat die dritte Generation seines hauseigenen KI-Chips vorgestellt. Er soll Dienste wie Copilot und GitHub Copilot antreiben und pro Rechenschrank bis zu siebenmal mehr Text erzeugen als der Vorgänger. Ziel ist, weniger von Nvidia abhängig zu sein. Für Nutzer heisst das langfristig: mehr Rechenleistung, eventuell tiefere Kosten.",
-          "quelle": {
-            "name": "Microsoft Azure Blog",
-            "url": "https://azure.microsoft.com/en-us/blog/deep-dive-into-azure-maia-300-architecture/"
-          }
-        },
-        {
-          "datum": "12.10.",
-          "firma": "Ambi",
-          "kategorie": "Datenschutz",
-          "titel": "KI-App, die im Hintergrund mithört",
-          "text": "Das Start-up Ambi hat 26 Millionen Dollar erhalten. Seine App für iPhone, Mac und Apple Watch hört auf Wunsch laufend zu und liefert etwa in Sitzungen passende Infos. Das Mithören ist standardmässig aus. Wichtig: Wer so etwas nutzt, muss andere Anwesende informieren. In der Schweiz ist das Aufnehmen von Gesprächen ohne Einwilligung verboten.",
-          "quelle": {
-            "name": "TechCrunch",
-            "url": "https://techcrunch.com/2026/10/12/former-plaud-exec-raises-26m-for-ai-app-that-listens-to-you-in-the-background/"
-          }
-        }
-      ]
-    },
-    {
-      "key": "heute",
-      "label": "Heute",
       "datum": "2026-10-13",
       "items": [
         {
           "datum": "13.10.",
           "firma": "Apple",
           "kategorie": "Neue Geräte",
-          "titel": "Apple zeigt heute neue Geräte fürs Zuhause",
-          "text": "Apple hat für heute eine Vorstellung unter dem Motto «Welcome home» bestätigt. Laut Bloomberg kommen ein Smart-Home-Bildschirm, eine neue Apple TV und ein neuer HomePod mini, alle mit der überarbeiteten, KI-gestützten Siri. Was genau gezeigt wird und ab wann es in der Schweiz erhältlich ist, wird erst nach der Präsentation klar.",
+          "titel": "Apple zeigt Home-Bildschirm und neue Siri fürs Zuhause",
+          "text": "Apple hat einen kleinen Bildschirm namens HomeView für Tisch oder Wand, einen neuen HomePod mini und eine schnellere Apple TV vorgestellt. Die neue KI-Siri erkennt Hausbewohner an Stimme oder Gesicht und kann auf Kalender und Nachrichten zugreifen. In den USA kostet HomeView 299 Dollar. Preise und Termine für die Schweiz stehen auf der Apple-Website.",
           "quelle": {
-            "name": "9to5Mac",
-            "url": "https://9to5mac.com/2026/10/12/apple-welcome-home-event-three-new-products/"
+            "name": "Forbes",
+            "url": "https://www.forbes.com/sites/forbes-personal-shopper/2026/10/13/apple-launch-event-october-2026/"
           }
         },
         {
           "datum": "13.10.",
-          "firma": "Anthropic / NTT Data",
-          "kategorie": "Rechenzentren",
-          "titel": "Anthropic plant erstes Rechenzentrum in Japan",
-          "text": "Laut Nikkei Asia steht NTT Data kurz vor einer Einigung, für Anthropic in Osaka ein grosses Rechenzentrum zu bauen. Es könnte rund 6,3 Milliarden Dollar kosten und ab 2028 teilweise laufen. Unterschrieben ist noch nichts. Anthropic sucht weltweit nach Rechenleistung, weil die Nachfrage nach Claude stark wächst.",
+          "firma": "Character.AI",
+          "kategorie": "Wirtschaft",
+          "titel": "Chatbot-Firma Character.AI ist pleite",
+          "text": "Der bekannte Anbieter von KI-Begleitern hat in den USA ein Konkursverfahren eröffnet. Gründe sind Klagen wegen Schäden bei Jugendlichen, Ärger mit Behörden und hohe Kosten. Disney bietet 20 Millionen Dollar für Teile der Firma, andere dürfen mitbieten. Die App läuft vorerst weiter, könnte aber eingestellt werden, falls sich kein Käufer findet.",
           "quelle": {
-            "name": "Nikkei Asia",
-            "url": "https://asia.nikkei.com/business/technology/artificial-intelligence/ntt-to-build-first-data-center-for-anthropic-in-japan"
+            "name": "Fast Company",
+            "url": "https://www.fastcompany.com/91622790/character-ai-bankrupt-chatbot-platform-sell-disney"
+          }
+        },
+        {
+          "datum": "13.10.",
+          "firma": "Google",
+          "kategorie": "Modelle",
+          "titel": "Gemini 4 Argon jetzt auch im günstigeren Abo",
+          "text": "Google verteilt sein neues Spitzenmodell Gemini 4 Argon in der Gemini-App nun auch an Kundinnen und Kunden mit dem Abo «AI Pro». Bisher war es nur im teuren Ultra-Abo verfügbar. Das Modell soll vor allem beim Programmieren und bei langen Texten stärker sein. Gratis-Nutzer gehen vorerst leer aus, ob alle Länder gleichzeitig dran sind, ist offen.",
+          "quelle": {
+            "name": "9to5Google",
+            "url": "https://9to5google.com/2026/10/13/gemini-app-4-argon/"
           }
         },
         {
@@ -103,25 +52,76 @@
           }
         },
         {
-          "datum": "12.10.",
-          "firma": "Intel",
-          "kategorie": "Hardware",
-          "titel": "Intel bringt Grafikkarte für KI-Anwendungen",
-          "text": "An einer Fachkonferenz in den USA hat Intel die Karte D270 vorgestellt. Sie ist auf das Ausführen von KI-Modellen ausgelegt, hat sehr viel Speicher und wird mit Luft gekühlt. Erste Kunden testen sie bereits, breit erhältlich soll sie 2027 sein. Sie ist weniger stark als Nvidias Topmodelle, soll aber günstiger sein.",
+          "datum": "13.10.",
+          "firma": "Anthropic / NTT Data",
+          "kategorie": "Rechenzentren",
+          "titel": "Anthropic plant erstes Rechenzentrum in Japan",
+          "text": "Laut Nikkei Asia steht NTT Data kurz vor einer Einigung, für Anthropic in Osaka ein grosses Rechenzentrum zu bauen. Es könnte rund 6,3 Milliarden Dollar kosten und ab 2028 teilweise laufen. Unterschrieben ist noch nichts. Anthropic sucht weltweit nach Rechenleistung, weil die Nachfrage nach Claude stark wächst.",
           "quelle": {
-            "name": "AI Weekly",
-            "url": "https://aiweekly.co/alerts/intel-formally-launches-gpu-d270-at-ocp-summit-with-480gb-lpddr5x-and-13-pflops"
+            "name": "Nikkei Asia",
+            "url": "https://asia.nikkei.com/business/technology/artificial-intelligence/ntt-to-build-first-data-center-for-anthropic-in-japan"
+          }
+        }
+      ]
+    },
+    {
+      "key": "heute",
+      "label": "Heute",
+      "datum": "2026-10-14",
+      "items": [
+        {
+          "datum": "14.10.",
+          "firma": "OpenAI",
+          "kategorie": "Preise & Abos",
+          "titel": "OpenAI schaltet ältere GPT-4-Modelle ab",
+          "text": "OpenAI hat angekündigt, GPT-4o, GPT-4o mini, GPT-4.1 und GPT-4.1 mini am 14. Januar 2027 aus seiner Entwickler-Schnittstelle zu nehmen. Als Ersatz empfiehlt die Firma das neuere Modell GPT-6 Luna. Wer in der Firma eigene Tools oder Chatbots auf diesen Modellen betreibt, sollte rechtzeitig umstellen und testen.",
+          "quelle": {
+            "name": "OpenAI (Entwickler-Doku)",
+            "url": "https://developers.openai.com/api/docs/deprecations"
+          }
+        },
+        {
+          "datum": "14.10.",
+          "firma": "Anthropic",
+          "kategorie": "Wirtschaft",
+          "titel": "Anthropic stellt sich heute Grossinvestoren vor",
+          "text": "Laut Bloomberg lädt Anthropic heute ausgewählte Investoren an seinen Hauptsitz in San Francisco ein, wo sie der Firmenleitung Fragen stellen können. Das gilt als Schritt Richtung Börsengang, der noch vor Ende November möglich sein soll. Im Gespräch ist ein Firmenwert von bis zu 2 Billionen Dollar. Anthropic selbst äussert sich nicht.",
+          "quelle": {
+            "name": "Briefs (nach Bloomberg)",
+            "url": "https://www.briefs.co/news/anthropic-sets-investor-meetings-on-oct-14-ahead-of-possible/"
+          }
+        },
+        {
+          "datum": "14.10.",
+          "firma": "Apple / OpenAI",
+          "kategorie": "Recht & Regeln",
+          "titel": "Apple erhält Einblick in Daten von OpenAI",
+          "text": "Im Streit um angeblich gestohlene Geschäftsgeheimnisse hat ein US-Richter OpenAI verpflichtet, Apple früh Kopien von Geräten und Chats ehemaliger Apple-Ingenieure zu geben. Apple wirft ihnen vor, Wissen über neue Hardware mitgenommen zu haben. OpenAI bestreitet das. Entschieden ist der Fall damit noch nicht.",
+          "quelle": {
+            "name": "Bloomberg Law (via AI Weekly)",
+            "url": "https://aiweekly.co/alerts/apple-wins-early-forensic-access-in-openai-trade-secrets-suit"
           }
         },
         {
           "datum": "13.10.",
-          "firma": "Scaleway",
-          "kategorie": "Termin",
-          "titel": "KI-Konferenz ai-PULSE in Paris",
-          "text": "Der französische Cloud-Anbieter Scaleway lädt heute zur KI-Konferenz ai-PULSE in der Station F in Paris. Es geht um neue Forschung, Live-Demos und europäische KI-Infrastruktur. Für Firmen, die ihre Daten lieber in Europa als bei US-Anbietern verarbeiten wollen, ist das Thema digitale Souveränität zentral.",
+          "firma": "Anthropic",
+          "kategorie": "KI-Agenten",
+          "titel": "Anthropic ersetzt Git wegen KI-Agenten",
+          "text": "KI-Agenten schreiben bei Anthropic so viel Code, dass das übliche Werkzeug Git nicht mehr mithielt: Statt 2500 werden täglich über 30'000 Änderungen zusammengeführt. Anthropic hat darum mit Hilfe von Claude ein eigenes System namens Scion gebaut. Es wird nicht veröffentlicht, zeigt aber, wie stark Agenten die Softwareentwicklung verändern.",
           "quelle": {
-            "name": "createwith (Veranstaltungsübersicht)",
-            "url": "https://createwith.com/event/paris-ai-pulse-2026-october-13-2026-station-f-paris-oct-2026"
+            "name": "Anthropic Engineering",
+            "url": "https://www.anthropic.com/engineering/redesigning-source-control"
+          }
+        },
+        {
+          "datum": "14.10.",
+          "firma": "EU-Kommission",
+          "kategorie": "Termin",
+          "titel": "Europäischer KI-Innovationsmonat startet",
+          "text": "Mit einem KI-Gipfel in Dublin beginnt heute der «European AI Innovation Month». Bis 17. November gibt es in ganz Europa Konferenzen, Workshops und Pitch-Wettbewerbe, teils auch online. Ziel ist, dass mehr Firmen KI einsetzen, ausdrücklich auch kleine und mittlere Unternehmen. Partner-Anlässe sind im Kalender der Apply AI Alliance aufgeführt.",
+          "quelle": {
+            "name": "EU (Digital Skills and Jobs Platform)",
+            "url": "https://digital-skills-jobs.europa.eu/en/latest/news/european-ai-innovation-month-flagship-summits-online-and-person-connection"
           }
         }
       ]
@@ -132,17 +132,6 @@
       "datum": null,
       "items": [
         {
-          "datum": "14.10.",
-          "firma": "Anthropic",
-          "kategorie": "Wirtschaft",
-          "titel": "Investorentreffen vor möglichem Börsengang",
-          "text": "Laut Bloomberg trifft Anthropic am 14. Oktober Investoren. Ein Börsengang noch vor Ende November ist im Gespräch. Anthropic äussert sich nicht, der Zeitplan kann sich ändern.",
-          "quelle": {
-            "name": "toolnavs.com (KI-Briefing 2.10.)",
-            "url": "https://toolnavs.com/de/article/2257-ai-kurzbericht-2-oktober-anthropic-steuert-auf-den-b%C3%B6rsengang-zu-kalifornien-l%C3%A4d"
-          }
-        },
-        {
           "datum": "15.10.",
           "firma": "Anthropic",
           "kategorie": "Neue Funktion",
@@ -151,6 +140,17 @@
           "quelle": {
             "name": "toolnavs.com (KI-Briefing 10.10.)",
             "url": "https://toolnavs.com/de/article/2467-ki-briefing-vom-10-oktober-entwurf-f%C3%BCr-personal-agent-protokoll-china-plant-ki-j"
+          }
+        },
+        {
+          "datum": "20.10.",
+          "firma": "Microsoft",
+          "kategorie": "Termin",
+          "titel": "Online-Anlass zu Copilot in OneDrive",
+          "text": "Microsoft zeigt an einem kostenlosen Online-Event, wie Copilot in OneDrive weiterentwickelt wird, etwa beim Zusammenfassen und Vergleichen von Dateien. Danach gibt es eine Fragerunde.",
+          "quelle": {
+            "name": "Thurrott",
+            "url": "https://www.thurrott.com/?p=341750"
           }
         },
         {
