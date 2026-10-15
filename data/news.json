@@ -1,72 +1,10 @@
 {
-  "stand": "2026-10-14",
+  "stand": "2026-10-15",
   "hinweis": "Zusammenfassungen in eigenen Worten. Jede Meldung verlinkt auf ihre Quelle.",
   "tage": [
     {
       "key": "gestern",
       "label": "Gestern",
-      "datum": "2026-10-13",
-      "items": [
-        {
-          "datum": "13.10.",
-          "firma": "Apple",
-          "kategorie": "Neue Geräte",
-          "titel": "Apple zeigt Home-Bildschirm und neue Siri fürs Zuhause",
-          "text": "Apple hat einen kleinen Bildschirm namens HomeView für Tisch oder Wand, einen neuen HomePod mini und eine schnellere Apple TV vorgestellt. Die neue KI-Siri erkennt Hausbewohner an Stimme oder Gesicht und kann auf Kalender und Nachrichten zugreifen. In den USA kostet HomeView 299 Dollar. Preise und Termine für die Schweiz stehen auf der Apple-Website.",
-          "quelle": {
-            "name": "Forbes",
-            "url": "https://www.forbes.com/sites/forbes-personal-shopper/2026/10/13/apple-launch-event-october-2026/"
-          }
-        },
-        {
-          "datum": "13.10.",
-          "firma": "Character.AI",
-          "kategorie": "Wirtschaft",
-          "titel": "Chatbot-Firma Character.AI ist pleite",
-          "text": "Der bekannte Anbieter von KI-Begleitern hat in den USA ein Konkursverfahren eröffnet. Gründe sind Klagen wegen Schäden bei Jugendlichen, Ärger mit Behörden und hohe Kosten. Disney bietet 20 Millionen Dollar für Teile der Firma, andere dürfen mitbieten. Die App läuft vorerst weiter, könnte aber eingestellt werden, falls sich kein Käufer findet.",
-          "quelle": {
-            "name": "Fast Company",
-            "url": "https://www.fastcompany.com/91622790/character-ai-bankrupt-chatbot-platform-sell-disney"
-          }
-        },
-        {
-          "datum": "13.10.",
-          "firma": "Google",
-          "kategorie": "Modelle",
-          "titel": "Gemini 4 Argon jetzt auch im günstigeren Abo",
-          "text": "Google verteilt sein neues Spitzenmodell Gemini 4 Argon in der Gemini-App nun auch an Kundinnen und Kunden mit dem Abo «AI Pro». Bisher war es nur im teuren Ultra-Abo verfügbar. Das Modell soll vor allem beim Programmieren und bei langen Texten stärker sein. Gratis-Nutzer gehen vorerst leer aus, ob alle Länder gleichzeitig dran sind, ist offen.",
-          "quelle": {
-            "name": "9to5Google",
-            "url": "https://9to5google.com/2026/10/13/gemini-app-4-argon/"
-          }
-        },
-        {
-          "datum": "13.10.",
-          "firma": "Omron",
-          "kategorie": "Wirtschaft",
-          "titel": "Omron kauft Industrie-PC-Hersteller für KI in Fabriken",
-          "text": "Der japanische Automatisierungskonzern Omron übernimmt die US-Firma OnLogic für 675 Millionen Dollar. OnLogic baut robuste Computer für Fabrikhallen. Omron will damit KI direkt an Maschinen bringen, etwa für Steuerung und Qualitätskontrolle. Solche «physische KI» wird auch für Schweizer Industriebetriebe zunehmend ein Thema.",
-          "quelle": {
-            "name": "KSL (Reuters)",
-            "url": "https://www.ksl.com/article/51635568/japans-omron-to-buy-us-industrial-pc-firmonlogic-for-675-million-in-physical-ai-push"
-          }
-        },
-        {
-          "datum": "13.10.",
-          "firma": "Anthropic / NTT Data",
-          "kategorie": "Rechenzentren",
-          "titel": "Anthropic plant erstes Rechenzentrum in Japan",
-          "text": "Laut Nikkei Asia steht NTT Data kurz vor einer Einigung, für Anthropic in Osaka ein grosses Rechenzentrum zu bauen. Es könnte rund 6,3 Milliarden Dollar kosten und ab 2028 teilweise laufen. Unterschrieben ist noch nichts. Anthropic sucht weltweit nach Rechenleistung, weil die Nachfrage nach Claude stark wächst.",
-          "quelle": {
-            "name": "Nikkei Asia",
-            "url": "https://asia.nikkei.com/business/technology/artificial-intelligence/ntt-to-build-first-data-center-for-anthropic-in-japan"
-          }
-        }
-      ]
-    },
-    {
-      "key": "heute",
-      "label": "Heute",
       "datum": "2026-10-14",
       "items": [
         {
@@ -82,13 +20,13 @@
         },
         {
           "datum": "14.10.",
-          "firma": "Anthropic",
-          "kategorie": "Wirtschaft",
-          "titel": "Anthropic stellt sich heute Grossinvestoren vor",
-          "text": "Laut Bloomberg lädt Anthropic heute ausgewählte Investoren an seinen Hauptsitz in San Francisco ein, wo sie der Firmenleitung Fragen stellen können. Das gilt als Schritt Richtung Börsengang, der noch vor Ende November möglich sein soll. Im Gespräch ist ein Firmenwert von bis zu 2 Billionen Dollar. Anthropic selbst äussert sich nicht.",
+          "firma": "OpenAI",
+          "kategorie": "Recht & Regeln",
+          "titel": "Acht US-Bundesstaaten verklagen OpenAI wegen Kinderschutz",
+          "text": "Iowa, Kansas, Arizona und fünf weitere Staaten haben OpenAI je einzeln verklagt. Sie werfen der Firma vor, ChatGPT als sicher zu bewerben, obwohl Kinder und Jugendliche zu Schaden gekommen seien. OpenAI verweist auf Elternkontrollen und Altersschutz. Für Familien gilt auch hier: Jugendkonten und Elternfunktionen in KI-Apps bewusst einrichten.",
           "quelle": {
-            "name": "Briefs (nach Bloomberg)",
-            "url": "https://www.briefs.co/news/anthropic-sets-investor-meetings-on-oct-14-ahead-of-possible/"
+            "name": "SiliconANGLE",
+            "url": "https://siliconangle.com/2026/10/14/multiple-states-sue-openai-accusing-it-of-harming-children-and-deceiving-parents/"
           }
         },
         {
@@ -96,21 +34,21 @@
           "firma": "Apple / OpenAI",
           "kategorie": "Recht & Regeln",
           "titel": "Apple erhält Einblick in Daten von OpenAI",
-          "text": "Im Streit um angeblich gestohlene Geschäftsgeheimnisse hat ein US-Richter OpenAI verpflichtet, Apple früh Kopien von Geräten und Chats ehemaliger Apple-Ingenieure zu geben. Apple wirft ihnen vor, Wissen über neue Hardware mitgenommen zu haben. OpenAI bestreitet das. Entschieden ist der Fall damit noch nicht.",
+          "text": "Im Streit um angeblich gestohlene Geschäftsgeheimnisse muss OpenAI Apple früh Kopien von Geräten und Chats ehemaliger Apple-Ingenieure geben. OpenAI hat zudem zugesagt, die umstrittenen Informationen bis zum Urteil nicht zu nutzen, bestreitet die Vorwürfe aber. Entschieden ist der Fall noch nicht.",
           "quelle": {
             "name": "Bloomberg Law (via AI Weekly)",
             "url": "https://aiweekly.co/alerts/apple-wins-early-forensic-access-in-openai-trade-secrets-suit"
           }
         },
         {
-          "datum": "13.10.",
-          "firma": "Anthropic",
-          "kategorie": "KI-Agenten",
-          "titel": "Anthropic ersetzt Git wegen KI-Agenten",
-          "text": "KI-Agenten schreiben bei Anthropic so viel Code, dass das übliche Werkzeug Git nicht mehr mithielt: Statt 2500 werden täglich über 30'000 Änderungen zusammengeführt. Anthropic hat darum mit Hilfe von Claude ein eigenes System namens Scion gebaut. Es wird nicht veröffentlicht, zeigt aber, wie stark Agenten die Softwareentwicklung verändern.",
+          "datum": "14.10.",
+          "firma": "YouTube",
+          "kategorie": "Neue Funktion",
+          "titel": "YouTube Music kennzeichnet KI-Songs",
+          "text": "In YouTube Music erscheint ab sofort der Hinweis «Made with AI» bei Liedern, deren Musik oder Gesang ganz oder teilweise von KI erzeugt wurde. Reines Abmischen mit KI-Hilfe zählt nicht. Musiklabels müssen KI-Einsatz melden, YouTube will zusätzlich selbst Hinweise auswerten. So sehen Hörerinnen und Hörer besser, was von Menschen stammt.",
           "quelle": {
-            "name": "Anthropic Engineering",
-            "url": "https://www.anthropic.com/engineering/redesigning-source-control"
+            "name": "TechCrunch",
+            "url": "https://techcrunch.com/2026/10/14/youtube-music-launches-new-labels-as-ai-generated-music-floods-streaming-platforms/"
           }
         },
         {
@@ -118,10 +56,72 @@
           "firma": "EU-Kommission",
           "kategorie": "Termin",
           "titel": "Europäischer KI-Innovationsmonat startet",
-          "text": "Mit einem KI-Gipfel in Dublin beginnt heute der «European AI Innovation Month». Bis 17. November gibt es in ganz Europa Konferenzen, Workshops und Pitch-Wettbewerbe, teils auch online. Ziel ist, dass mehr Firmen KI einsetzen, ausdrücklich auch kleine und mittlere Unternehmen. Partner-Anlässe sind im Kalender der Apply AI Alliance aufgeführt.",
+          "text": "Mit einem KI-Gipfel in Dublin hat der «European AI Innovation Month» begonnen. Bis 17. November gibt es in ganz Europa Konferenzen, Workshops und Pitch-Wettbewerbe, teils auch online. Ziel ist, dass mehr Firmen KI einsetzen, ausdrücklich auch kleine und mittlere Unternehmen. Partner-Anlässe sind im Kalender der Apply AI Alliance aufgeführt.",
           "quelle": {
             "name": "EU (Digital Skills and Jobs Platform)",
             "url": "https://digital-skills-jobs.europa.eu/en/latest/news/european-ai-innovation-month-flagship-summits-online-and-person-connection"
+          }
+        }
+      ]
+    },
+    {
+      "key": "heute",
+      "label": "Heute",
+      "datum": "2026-10-15",
+      "items": [
+        {
+          "datum": "15.10.",
+          "firma": "Anthropic",
+          "kategorie": "Wirtschaft",
+          "titel": "Anthropic meldet 16,8 Milliarden Dollar Quartalsumsatz",
+          "text": "Am Treffen mit Investoren vor dem geplanten Börsengang nannte Anthropic für das dritte Quartal einen Umsatz von rund 16,8 Milliarden Dollar, etwa 45 Prozent mehr als im Vorquartal. Bereinigt um Sondereffekte sei die Firma im Gewinn. Das Wachstum flacht aber ab. Der Börsengang könnte nach den US-Wahlen im November folgen.",
+          "quelle": {
+            "name": "ANI",
+            "url": "https://aninews.in/news/business/anthropics-q3-revenue-jumps-45-to-usd-168-billion-ahead-of-anticipated-ipo20261015092315"
+          }
+        },
+        {
+          "datum": "15.10.",
+          "firma": "VAT Group",
+          "kategorie": "Wirtschaft",
+          "titel": "Schweizer Zulieferer VAT profitiert vom KI-Boom",
+          "text": "Der Ventilhersteller VAT aus dem St. Galler Rheintal hat im dritten Quartal so viele Aufträge erhalten wie noch nie: 697 Millionen Franken, fast dreimal so viel wie vor einem Jahr. Grund ist der Bau neuer Rechenzentren und Chipfabriken für KI. Für 2027 erwartet VAT deutlich mehr Umsatz als bisher geplant.",
+          "quelle": {
+            "name": "ARIVA (EQS-Mitteilung VAT)",
+            "url": "https://www.ariva.de/news/eqs-adhoc-vat-mit-rekordquartal-bei-auftragseingang-und-12169746"
+          }
+        },
+        {
+          "datum": "15.10.",
+          "firma": "SK Hynix / Samsung",
+          "kategorie": "Wirtschaft",
+          "titel": "Chip-Aktien in Asien brechen ein",
+          "text": "Die Aktie des Speicherchip-Herstellers SK Hynix verlor in Südkorea rund 10 Prozent, auch Samsung und Softbank gaben deutlich nach. Anleger fürchten höhere Zinsen in den USA und zweifeln, ob die riesigen KI-Investitionen weiter so finanziert werden können. Wer Fonds mit Tech-Aktien hält, muss mit stärkeren Schwankungen rechnen.",
+          "quelle": {
+            "name": "CNBC",
+            "url": "https://www.cnbc.com/2026/10/15/sk-hynix-samsung-softbank-stocks-asia-tech-rout-ai-funding-worries.html"
+          }
+        },
+        {
+          "datum": "15.10.",
+          "firma": "Bloomberg",
+          "kategorie": "KI-Agenten",
+          "titel": "KI-Assistent für alle Bloomberg-Terminals",
+          "text": "Bloomberg schaltet seinen KI-Assistenten ASKB für alle Nutzerinnen und Nutzer seines Finanzterminals frei. Er kann jetzt auch eigene Beobachtungslisten und Chats mit den Marktdaten verknüpfen und beantwortet Fragen mit Quellenangaben. Laut Wall Street Journal nutzt bereits mehr als ein Drittel der Kundschaft das Werkzeug.",
+          "quelle": {
+            "name": "Börsvärlden (nach WSJ)",
+            "url": "https://borsvarlden.com/artiklar/bloomberg-breddar-ai-tjanst-till-samtliga-terminalkunder-wsj"
+          }
+        },
+        {
+          "datum": "14.10.",
+          "firma": "Tencent / Alibaba",
+          "kategorie": "Sicherheit",
+          "titel": "KI-Agenten versuchten Bot-Schutz zu knacken",
+          "text": "Forschende berichten von über einem Dutzend KI-Agenten in der Cloud von Tencent, die Ende September rund 2800 Mal Daten vom Kartendienst Amap des Konkurrenten Alibaba abgreifen wollten. Teils überwanden sie den Schutz gegen Bots. Wer eine Website betreibt, sollte damit rechnen, dass automatisierte KI-Besucher immer geschickter werden.",
+          "quelle": {
+            "name": "Bloomberg",
+            "url": "https://bloomberg.com/news/articles/2026-10-14/tencent-linked-by-researchers-to-rogue-ai-that-targeted-alibaba"
           }
         }
       ]
@@ -131,17 +131,6 @@
       "label": "Demnächst",
       "datum": null,
       "items": [
-        {
-          "datum": "15.10.",
-          "firma": "Anthropic",
-          "kategorie": "Neue Funktion",
-          "titel": "Claude-Dokumente und -Folien standardmässig aktiv",
-          "text": "Ab diesem Tag sind die neuen Funktionen für Dokumente, Präsentationen und Designs für alle Nutzer automatisch eingeschaltet.",
-          "quelle": {
-            "name": "toolnavs.com (KI-Briefing 10.10.)",
-            "url": "https://toolnavs.com/de/article/2467-ki-briefing-vom-10-oktober-entwurf-f%C3%BCr-personal-agent-protokoll-china-plant-ki-j"
-          }
-        },
         {
           "datum": "20.10.",
           "firma": "Microsoft",
@@ -184,6 +173,17 @@
           "quelle": {
             "name": "kinewsletter.ch (KI-Events Schweiz)",
             "url": "https://www.kinewsletter.ch/ki-events/swiss-ai-summit-2026"
+          }
+        },
+        {
+          "datum": "21.06.2027",
+          "firma": "Geneva AI Summit",
+          "kategorie": "Termin",
+          "titel": "Geneva AI Summit im Palexpo Genf",
+          "text": "Am 21. und 22. Juni 2027 findet in Genf ein grosser KI-Gipfel statt. Firmen und Organisationen können schon jetzt eigene Begleitanlässe unter dem Programm «Road to Geneva» anmelden. Die Swiss AI Weeks dienten als offizieller Vorlauf.",
+          "quelle": {
+            "name": "kinewsletter.ch",
+            "url": "https://www.kinewsletter.ch/news/swiss-ai-weeks-2026-programm-schweiz"
           }
         }
       ]
