@@ -1,72 +1,10 @@
 {
-  "stand": "2026-10-15",
+  "stand": "2026-10-16",
   "hinweis": "Zusammenfassungen in eigenen Worten. Jede Meldung verlinkt auf ihre Quelle.",
   "tage": [
     {
       "key": "gestern",
       "label": "Gestern",
-      "datum": "2026-10-14",
-      "items": [
-        {
-          "datum": "14.10.",
-          "firma": "OpenAI",
-          "kategorie": "Preise & Abos",
-          "titel": "OpenAI schaltet ältere GPT-4-Modelle ab",
-          "text": "OpenAI hat angekündigt, GPT-4o, GPT-4o mini, GPT-4.1 und GPT-4.1 mini am 14. Januar 2027 aus seiner Entwickler-Schnittstelle zu nehmen. Als Ersatz empfiehlt die Firma das neuere Modell GPT-6 Luna. Wer in der Firma eigene Tools oder Chatbots auf diesen Modellen betreibt, sollte rechtzeitig umstellen und testen.",
-          "quelle": {
-            "name": "OpenAI (Entwickler-Doku)",
-            "url": "https://developers.openai.com/api/docs/deprecations"
-          }
-        },
-        {
-          "datum": "14.10.",
-          "firma": "OpenAI",
-          "kategorie": "Recht & Regeln",
-          "titel": "Acht US-Bundesstaaten verklagen OpenAI wegen Kinderschutz",
-          "text": "Iowa, Kansas, Arizona und fünf weitere Staaten haben OpenAI je einzeln verklagt. Sie werfen der Firma vor, ChatGPT als sicher zu bewerben, obwohl Kinder und Jugendliche zu Schaden gekommen seien. OpenAI verweist auf Elternkontrollen und Altersschutz. Für Familien gilt auch hier: Jugendkonten und Elternfunktionen in KI-Apps bewusst einrichten.",
-          "quelle": {
-            "name": "SiliconANGLE",
-            "url": "https://siliconangle.com/2026/10/14/multiple-states-sue-openai-accusing-it-of-harming-children-and-deceiving-parents/"
-          }
-        },
-        {
-          "datum": "14.10.",
-          "firma": "Apple / OpenAI",
-          "kategorie": "Recht & Regeln",
-          "titel": "Apple erhält Einblick in Daten von OpenAI",
-          "text": "Im Streit um angeblich gestohlene Geschäftsgeheimnisse muss OpenAI Apple früh Kopien von Geräten und Chats ehemaliger Apple-Ingenieure geben. OpenAI hat zudem zugesagt, die umstrittenen Informationen bis zum Urteil nicht zu nutzen, bestreitet die Vorwürfe aber. Entschieden ist der Fall noch nicht.",
-          "quelle": {
-            "name": "Bloomberg Law (via AI Weekly)",
-            "url": "https://aiweekly.co/alerts/apple-wins-early-forensic-access-in-openai-trade-secrets-suit"
-          }
-        },
-        {
-          "datum": "14.10.",
-          "firma": "YouTube",
-          "kategorie": "Neue Funktion",
-          "titel": "YouTube Music kennzeichnet KI-Songs",
-          "text": "In YouTube Music erscheint ab sofort der Hinweis «Made with AI» bei Liedern, deren Musik oder Gesang ganz oder teilweise von KI erzeugt wurde. Reines Abmischen mit KI-Hilfe zählt nicht. Musiklabels müssen KI-Einsatz melden, YouTube will zusätzlich selbst Hinweise auswerten. So sehen Hörerinnen und Hörer besser, was von Menschen stammt.",
-          "quelle": {
-            "name": "TechCrunch",
-            "url": "https://techcrunch.com/2026/10/14/youtube-music-launches-new-labels-as-ai-generated-music-floods-streaming-platforms/"
-          }
-        },
-        {
-          "datum": "14.10.",
-          "firma": "EU-Kommission",
-          "kategorie": "Termin",
-          "titel": "Europäischer KI-Innovationsmonat startet",
-          "text": "Mit einem KI-Gipfel in Dublin hat der «European AI Innovation Month» begonnen. Bis 17. November gibt es in ganz Europa Konferenzen, Workshops und Pitch-Wettbewerbe, teils auch online. Ziel ist, dass mehr Firmen KI einsetzen, ausdrücklich auch kleine und mittlere Unternehmen. Partner-Anlässe sind im Kalender der Apply AI Alliance aufgeführt.",
-          "quelle": {
-            "name": "EU (Digital Skills and Jobs Platform)",
-            "url": "https://digital-skills-jobs.europa.eu/en/latest/news/european-ai-innovation-month-flagship-summits-online-and-person-connection"
-          }
-        }
-      ]
-    },
-    {
-      "key": "heute",
-      "label": "Heute",
       "datum": "2026-10-15",
       "items": [
         {
@@ -93,6 +31,28 @@
         },
         {
           "datum": "15.10.",
+          "firma": "Visa",
+          "kategorie": "Arbeitswelt & Alltag",
+          "titel": "Viele in der Schweiz kaufen mit KI-Hilfe ein",
+          "text": "Laut einer Umfrage im Auftrag von Visa haben 70 Prozent der Befragten in der Schweiz schon KI genutzt, um einen Einkauf vorzubereiten, etwa für Vergleiche. Selber bezahlen lassen will die KI aber kaum jemand: Über zwei Drittel wollen jede Zahlung selbst freigeben. Grösste Sorgen sind der Verlust der Kontrolle über die Ausgaben und Missbrauch von Zahlungsdaten.",
+          "quelle": {
+            "name": "cash.ch (AWP)",
+            "url": "https://www.cash.ch/news/mehrheit-in-der-schweiz-nutzt-ki-als-einkaufshilfe-976827"
+          }
+        },
+        {
+          "datum": "15.10.",
+          "firma": "FTC / OpenAI / Anthropic",
+          "kategorie": "Recht & Regeln",
+          "titel": "US-Behörde verlangt Unterlagen von OpenAI und Anthropic",
+          "text": "Die US-Verbraucherschutzbehörde FTC hat bestätigt, dass sie von OpenAI und Anthropic umfangreiche Dokumente einfordert. Es geht um Sicherheitsvorfälle mit KI, Schutzmassnahmen, Werbeaussagen und Datenschutz. Auch Chefs sollen befragt werden. Ein Fehlverhalten ist damit noch nicht festgestellt, die Untersuchung läuft.",
+          "quelle": {
+            "name": "TechRepublic",
+            "url": "https://www.techrepublic.com/article/news-ftc-subpoenas-openai-anthropic-ai-safety/"
+          }
+        },
+        {
+          "datum": "15.10.",
           "firma": "SK Hynix / Samsung",
           "kategorie": "Wirtschaft",
           "titel": "Chip-Aktien in Asien brechen ein",
@@ -101,27 +61,67 @@
             "name": "CNBC",
             "url": "https://www.cnbc.com/2026/10/15/sk-hynix-samsung-softbank-stocks-asia-tech-rout-ai-funding-worries.html"
           }
-        },
+        }
+      ]
+    },
+    {
+      "key": "heute",
+      "label": "Heute",
+      "datum": "2026-10-16",
+      "items": [
         {
-          "datum": "15.10.",
-          "firma": "Bloomberg",
-          "kategorie": "KI-Agenten",
-          "titel": "KI-Assistent für alle Bloomberg-Terminals",
-          "text": "Bloomberg schaltet seinen KI-Assistenten ASKB für alle Nutzerinnen und Nutzer seines Finanzterminals frei. Er kann jetzt auch eigene Beobachtungslisten und Chats mit den Marktdaten verknüpfen und beantwortet Fragen mit Quellenangaben. Laut Wall Street Journal nutzt bereits mehr als ein Drittel der Kundschaft das Werkzeug.",
+          "datum": "16.10.",
+          "firma": "Meta",
+          "kategorie": "Open Source",
+          "titel": "Meta gibt grosses Modell Muse Spark Open frei",
+          "text": "Meta hat in der Nacht die Gewichte von Muse Spark Open veröffentlicht. Das Modell versteht Text, Bilder, Video und Ton und kann sehr lange Dokumente verarbeiten. Firmen dürfen es anpassen und in eigene Produkte einbauen, müssen das aber kennzeichnen. Für den Betrieb braucht es viel Speicher, etwa zwei grosse Mac Studios, oder man nutzt es über Cloud-Anbieter.",
           "quelle": {
-            "name": "Börsvärlden (nach WSJ)",
-            "url": "https://borsvarlden.com/artiklar/bloomberg-breddar-ai-tjanst-till-samtliga-terminalkunder-wsj"
+            "name": "MarkTechPost",
+            "url": "https://www.marktechpost.com/2026/10/15/meta-muse-spark-open-816b-open-weight-model/"
           }
         },
         {
-          "datum": "14.10.",
-          "firma": "Tencent / Alibaba",
-          "kategorie": "Sicherheit",
-          "titel": "KI-Agenten versuchten Bot-Schutz zu knacken",
-          "text": "Forschende berichten von über einem Dutzend KI-Agenten in der Cloud von Tencent, die Ende September rund 2800 Mal Daten vom Kartendienst Amap des Konkurrenten Alibaba abgreifen wollten. Teils überwanden sie den Schutz gegen Bots. Wer eine Website betreibt, sollte damit rechnen, dass automatisierte KI-Besucher immer geschickter werden.",
+          "datum": "16.10.",
+          "firma": "Microsoft",
+          "kategorie": "Neues Modell",
+          "titel": "Microsoft trainiert eigenes Riesenmodell MAI-Base-2",
+          "text": "Microsoft hat das Grundtraining seines eigenen KI-Modells MAI-Base-2 abgeschlossen. Es soll mit deutlich weniger Rechenaufwand auskommen als vergleichbare Modelle und kann auch Bilder verarbeiten. Fertig ist es noch nicht: Zuerst kommt es in Microsofts eigene Produkte, später für Geschäftskunden über Foundry. Microsoft wird so unabhängiger von OpenAI.",
           "quelle": {
-            "name": "Bloomberg",
-            "url": "https://bloomberg.com/news/articles/2026-10-14/tencent-linked-by-researchers-to-rogue-ai-that-targeted-alibaba"
+            "name": "Microsoft AI",
+            "url": "https://microsoft.ai/news/frontier-pre-training-at-microsoft-ai/"
+          }
+        },
+        {
+          "datum": "16.10.",
+          "firma": "Accenture / Anthropic",
+          "kategorie": "Arbeitswelt",
+          "titel": "Accenture begrenzt KI-Budget pro Person",
+          "text": "Der Beratungskonzern Accenture zahlt seinen Angestellten zentral nur noch 29 Dollar pro Monat für die Nutzung von Claude. Wer mehr braucht, muss die Kosten über ein Projekt oder Team abrechnen. Laut Bericht kommen manche auf mehrere hundert Dollar im Monat. Das zeigt: Auch in Firmen werden KI-Kosten zum Budgetthema, das man im Blick behalten sollte.",
+          "quelle": {
+            "name": "RuntimeWire (nach 404 Media)",
+            "url": "https://runtimewire.com/article/accenture-29-dollar-claude-monthly-budget"
+          }
+        },
+        {
+          "datum": "15.10.",
+          "firma": "Anthropic",
+          "kategorie": "Sicherheit",
+          "titel": "Externe Prüfer erhalten Einblick bei Anthropic",
+          "text": "Anthropic lässt sechs Fachleute der unabhängigen Organisation METR mit eigenen Geräten und Zugängen intern arbeiten. Sie prüfen Risiken und Sicherheitsvorfälle und dürfen ihre Ergebnisse veröffentlichen, ohne dass Anthropic das verhindern kann. Nur einzelne heikle Stellen dürfen geschwärzt werden. Weitere Prüfstellen sollen folgen.",
+          "quelle": {
+            "name": "Benzinga",
+            "url": "https://www.benzinga.com/markets/private-markets/26/10/62397762/anthropic-lets-outside-ai-evaluators-inside-its-systems-and-publish-findings-it-cant-block"
+          }
+        },
+        {
+          "datum": "15.10.",
+          "firma": "OpenAI",
+          "kategorie": "Preise & Abos",
+          "titel": "Werbung in ChatGPT wird günstiger",
+          "text": "Laut The Information hat sich die Zahl der Firmen, die in ChatGPT werben, seit Ende August auf rund 60'000 verdreifacht. OpenAI senkt die Preise und baut den Verkauf mit früheren Meta-Leuten aus. Ein Klick kostet teils nur einen Bruchteil von Google-Werbung. Für KMU kann das ein neuer Werbekanal sein, Erfahrungswerte sind aber noch dünn.",
+          "quelle": {
+            "name": "Shopifreaks (nach The Information)",
+            "url": "https://www.shopifreaks.com/openai-triples-chatgpt-advertisers-to-about-60000-as-it-cuts-ad-prices-and-hires-dozens-of-former-meta-staffers-to-sell-ads/"
           }
         }
       ]
@@ -154,6 +154,17 @@
           }
         },
         {
+          "datum": "27.10.",
+          "firma": "AI Media Award",
+          "kategorie": "Termin",
+          "titel": "AI Media Award im Kongresshaus Zürich",
+          "text": "Im Kongresshaus Zürich werden die Finalistinnen und Finalisten des AI Media Award gezeigt, eines Wettbewerbs für Filme und Medien, die mit KI entstanden sind. Begleitend gibt es einen Tag rund um KI in Film, Medien und Musik. Die Einreichfrist ist abgelaufen, Tickets gibt es beim Veranstalter.",
+          "quelle": {
+            "name": "AI Film Contests",
+            "url": "https://aifilmcontests.com/contests/ai-media-award-zurich-2026"
+          }
+        },
+        {
           "datum": "12.11.",
           "firma": "Anthropic",
           "kategorie": "Recht & Regeln",
@@ -173,17 +184,6 @@
           "quelle": {
             "name": "kinewsletter.ch (KI-Events Schweiz)",
             "url": "https://www.kinewsletter.ch/ki-events/swiss-ai-summit-2026"
-          }
-        },
-        {
-          "datum": "21.06.2027",
-          "firma": "Geneva AI Summit",
-          "kategorie": "Termin",
-          "titel": "Geneva AI Summit im Palexpo Genf",
-          "text": "Am 21. und 22. Juni 2027 findet in Genf ein grosser KI-Gipfel statt. Firmen und Organisationen können schon jetzt eigene Begleitanlässe unter dem Programm «Road to Geneva» anmelden. Die Swiss AI Weeks dienten als offizieller Vorlauf.",
-          "quelle": {
-            "name": "kinewsletter.ch",
-            "url": "https://www.kinewsletter.ch/news/swiss-ai-weeks-2026-programm-schweiz"
           }
         }
       ]
