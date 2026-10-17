@@ -1,85 +1,12 @@
 {
-  "stand": "2026-10-16",
+  "stand": "2026-10-17",
   "hinweis": "Zusammenfassungen in eigenen Worten. Jede Meldung verlinkt auf ihre Quelle.",
   "tage": [
     {
       "key": "gestern",
       "label": "Gestern",
-      "datum": "2026-10-15",
-      "items": [
-        {
-          "datum": "15.10.",
-          "firma": "Anthropic",
-          "kategorie": "Wirtschaft",
-          "titel": "Anthropic meldet 16,8 Milliarden Dollar Quartalsumsatz",
-          "text": "Am Treffen mit Investoren vor dem geplanten Börsengang nannte Anthropic für das dritte Quartal einen Umsatz von rund 16,8 Milliarden Dollar, etwa 45 Prozent mehr als im Vorquartal. Bereinigt um Sondereffekte sei die Firma im Gewinn. Das Wachstum flacht aber ab. Der Börsengang könnte nach den US-Wahlen im November folgen.",
-          "quelle": {
-            "name": "ANI",
-            "url": "https://aninews.in/news/business/anthropics-q3-revenue-jumps-45-to-usd-168-billion-ahead-of-anticipated-ipo20261015092315"
-          }
-        },
-        {
-          "datum": "15.10.",
-          "firma": "VAT Group",
-          "kategorie": "Wirtschaft",
-          "titel": "Schweizer Zulieferer VAT profitiert vom KI-Boom",
-          "text": "Der Ventilhersteller VAT aus dem St. Galler Rheintal hat im dritten Quartal so viele Aufträge erhalten wie noch nie: 697 Millionen Franken, fast dreimal so viel wie vor einem Jahr. Grund ist der Bau neuer Rechenzentren und Chipfabriken für KI. Für 2027 erwartet VAT deutlich mehr Umsatz als bisher geplant.",
-          "quelle": {
-            "name": "ARIVA (EQS-Mitteilung VAT)",
-            "url": "https://www.ariva.de/news/eqs-adhoc-vat-mit-rekordquartal-bei-auftragseingang-und-12169746"
-          }
-        },
-        {
-          "datum": "15.10.",
-          "firma": "Visa",
-          "kategorie": "Arbeitswelt & Alltag",
-          "titel": "Viele in der Schweiz kaufen mit KI-Hilfe ein",
-          "text": "Laut einer Umfrage im Auftrag von Visa haben 70 Prozent der Befragten in der Schweiz schon KI genutzt, um einen Einkauf vorzubereiten, etwa für Vergleiche. Selber bezahlen lassen will die KI aber kaum jemand: Über zwei Drittel wollen jede Zahlung selbst freigeben. Grösste Sorgen sind der Verlust der Kontrolle über die Ausgaben und Missbrauch von Zahlungsdaten.",
-          "quelle": {
-            "name": "cash.ch (AWP)",
-            "url": "https://www.cash.ch/news/mehrheit-in-der-schweiz-nutzt-ki-als-einkaufshilfe-976827"
-          }
-        },
-        {
-          "datum": "15.10.",
-          "firma": "FTC / OpenAI / Anthropic",
-          "kategorie": "Recht & Regeln",
-          "titel": "US-Behörde verlangt Unterlagen von OpenAI und Anthropic",
-          "text": "Die US-Verbraucherschutzbehörde FTC hat bestätigt, dass sie von OpenAI und Anthropic umfangreiche Dokumente einfordert. Es geht um Sicherheitsvorfälle mit KI, Schutzmassnahmen, Werbeaussagen und Datenschutz. Auch Chefs sollen befragt werden. Ein Fehlverhalten ist damit noch nicht festgestellt, die Untersuchung läuft.",
-          "quelle": {
-            "name": "TechRepublic",
-            "url": "https://www.techrepublic.com/article/news-ftc-subpoenas-openai-anthropic-ai-safety/"
-          }
-        },
-        {
-          "datum": "15.10.",
-          "firma": "SK Hynix / Samsung",
-          "kategorie": "Wirtschaft",
-          "titel": "Chip-Aktien in Asien brechen ein",
-          "text": "Die Aktie des Speicherchip-Herstellers SK Hynix verlor in Südkorea rund 10 Prozent, auch Samsung und Softbank gaben deutlich nach. Anleger fürchten höhere Zinsen in den USA und zweifeln, ob die riesigen KI-Investitionen weiter so finanziert werden können. Wer Fonds mit Tech-Aktien hält, muss mit stärkeren Schwankungen rechnen.",
-          "quelle": {
-            "name": "CNBC",
-            "url": "https://www.cnbc.com/2026/10/15/sk-hynix-samsung-softbank-stocks-asia-tech-rout-ai-funding-worries.html"
-          }
-        }
-      ]
-    },
-    {
-      "key": "heute",
-      "label": "Heute",
       "datum": "2026-10-16",
       "items": [
-        {
-          "datum": "16.10.",
-          "firma": "Meta",
-          "kategorie": "Open Source",
-          "titel": "Meta gibt grosses Modell Muse Spark Open frei",
-          "text": "Meta hat in der Nacht die Gewichte von Muse Spark Open veröffentlicht. Das Modell versteht Text, Bilder, Video und Ton und kann sehr lange Dokumente verarbeiten. Firmen dürfen es anpassen und in eigene Produkte einbauen, müssen das aber kennzeichnen. Für den Betrieb braucht es viel Speicher, etwa zwei grosse Mac Studios, oder man nutzt es über Cloud-Anbieter.",
-          "quelle": {
-            "name": "MarkTechPost",
-            "url": "https://www.marktechpost.com/2026/10/15/meta-muse-spark-open-816b-open-weight-model/"
-          }
-        },
         {
           "datum": "16.10.",
           "firma": "Microsoft",
@@ -93,6 +20,39 @@
         },
         {
           "datum": "16.10.",
+          "firma": "Apple",
+          "kategorie": "Sicherheit",
+          "titel": "Apple verschärft App-Store-Regeln gegen KI-Nacktbilder",
+          "text": "Apple hat die Regeln für den App Store angepasst. Apps, die mit KI Nacktbilder echter Menschen ohne deren Einwilligung erzeugen, werden entfernt. Neu verboten sind auch versteckte Funktionen, die erst nach der Prüfung durch Apple eingeschaltet werden. Anbieter von KI-Apps müssen solche Fälschungen aktiv verhindern, sonst droht der Ausschluss aus dem Entwicklerprogramm.",
+          "quelle": {
+            "name": "MacRumors",
+            "url": "https://www.macrumors.com/2026/10/16/app-store-rules-deepfakes/"
+          }
+        },
+        {
+          "datum": "16.10.",
+          "firma": "China",
+          "kategorie": "Recht & Regeln",
+          "titel": "China will Export von KI-Technik stärker kontrollieren",
+          "text": "China hat einen Entwurf für strengere Exportregeln vorgelegt. Betroffen sind 23 KI-Schlüsseltechnologien, etwa Gewichte und Quellcode sehr grosser Modelle. KI, die selbständig Schadsoftware baut, soll gar nicht exportiert werden. Wer Modelle offen veröffentlicht, erhält eine schnelle Bewilligung. Die Nutzung über Apps oder Schnittstellen bleibt frei.",
+          "quelle": {
+            "name": "The Decoder",
+            "url": "https://the-decoder.de/china-will-export-von-open-weight-modellen-und-ki-technologie-strenger-kontrollieren/"
+          }
+        },
+        {
+          "datum": "16.10.",
+          "firma": "Anthropic",
+          "kategorie": "Arbeitswelt",
+          "titel": "Anthropic: Weniger Junioren, mehr KI-Agenten",
+          "text": "Anthropic hat Zahlen zur eigenen Belegschaft veröffentlicht. KI-Agenten arbeiten dort inzwischen rund sechsmal so viele Stunden wie die Angestellten. Der Anteil junger Berufseinsteiger bei technischen Neuanstellungen sank von 27 auf 9 Prozent. Gleichzeitig verbringen Mitarbeitende mehr Zeit in Sitzungen. Für Berufseinsteiger ist das ein Hinweis, dass KI-Kenntnisse bei Bewerbungen wichtiger werden.",
+          "quelle": {
+            "name": "Anthropic",
+            "url": "https://www.anthropic.com/research/employment-at-anthropic"
+          }
+        },
+        {
+          "datum": "16.10.",
           "firma": "Accenture / Anthropic",
           "kategorie": "Arbeitswelt",
           "titel": "Accenture begrenzt KI-Budget pro Person",
@@ -101,27 +61,67 @@
             "name": "RuntimeWire (nach 404 Media)",
             "url": "https://runtimewire.com/article/accenture-29-dollar-claude-monthly-budget"
           }
-        },
+        }
+      ]
+    },
+    {
+      "key": "heute",
+      "label": "Heute",
+      "datum": "2026-10-17",
+      "items": [
         {
-          "datum": "15.10.",
+          "datum": "17.10.",
           "firma": "Anthropic",
           "kategorie": "Sicherheit",
-          "titel": "Externe Prüfer erhalten Einblick bei Anthropic",
-          "text": "Anthropic lässt sechs Fachleute der unabhängigen Organisation METR mit eigenen Geräten und Zugängen intern arbeiten. Sie prüfen Risiken und Sicherheitsvorfälle und dürfen ihre Ergebnisse veröffentlichen, ohne dass Anthropic das verhindern kann. Nur einzelne heikle Stellen dürfen geschwärzt werden. Weitere Prüfstellen sollen folgen.",
+          "titel": "Claude klärt altes Rätsel um Verschlüsselungs-Standard",
+          "text": "Anthropic berichtet, dass Claude die Herkunft von Startwerten im US-Standard für digitale Signaturen gefunden hat. Die Zahlen stammen offenbar aus einem einfachen Zufallsgenerator der 1990er-Jahre, gefüttert mit Uhrzeiten. Das schwächt den alten Verdacht einer versteckten Hintertür. Laut Anthropic muss niemand etwas ändern. Einige Werte sind weiterhin ungeklärt.",
           "quelle": {
-            "name": "Benzinga",
-            "url": "https://www.benzinga.com/markets/private-markets/26/10/62397762/anthropic-lets-outside-ai-evaluators-inside-its-systems-and-publish-findings-it-cant-block"
+            "name": "OfficeChai",
+            "url": "https://officechai.com/ai/claude-solves-25-year-old-nist-cryptography-mystery-finds-origin-of-ecdsa-curve-seeds/"
           }
         },
         {
-          "datum": "15.10.",
-          "firma": "OpenAI",
-          "kategorie": "Preise & Abos",
-          "titel": "Werbung in ChatGPT wird günstiger",
-          "text": "Laut The Information hat sich die Zahl der Firmen, die in ChatGPT werben, seit Ende August auf rund 60'000 verdreifacht. OpenAI senkt die Preise und baut den Verkauf mit früheren Meta-Leuten aus. Ein Klick kostet teils nur einen Bruchteil von Google-Werbung. Für KMU kann das ein neuer Werbekanal sein, Erfahrungswerte sind aber noch dünn.",
+          "datum": "16.10.",
+          "firma": "Anthropic",
+          "kategorie": "Recht & Regeln",
+          "titel": "Anthropic schlägt eigenes KI-Sicherheitsgesetz vor",
+          "text": "Laut Politico und Reuters wirbt Anthropic im US-Kongress für einen eigenen Gesetzesentwurf. Unabhängige Prüfer sollen grosse KI-Modelle regelmässig testen. Stoppen dürfte der Staat ein Modell nur bei drohendem Schaden über einer Milliarde Dollar oder über 50 Toten, und nur mit Gerichtsbeschluss. Staatliche Eingriffe wären damit klar begrenzt. Es ist erst ein Entwurf.",
           "quelle": {
-            "name": "Shopifreaks (nach The Information)",
-            "url": "https://www.shopifreaks.com/openai-triples-chatgpt-advertisers-to-about-60000-as-it-cuts-ad-prices-and-hires-dozens-of-former-meta-staffers-to-sell-ads/"
+            "name": "Reuters via KFGO",
+            "url": "https://kfgo.com/2026/10/16/anthropic-quietly-pitches-its-own-ai-safety-bill-to-lawmakers-politico-reports/"
+          }
+        },
+        {
+          "datum": "16.10.",
+          "firma": "OpenAI",
+          "kategorie": "Neue Funktion",
+          "titel": "ChatGPT kann in Chrome Tabs bedienen",
+          "text": "Die ChatGPT-Erweiterung für den Chrome-Browser kann jetzt offene Tabs lesen und darin handeln: Formulare ausfüllen, Nachrichten senden, Dateien herunterladen oder Tabs ordnen. Dazu kommt eine Seitenleiste. Praktisch, aber Vorsicht: Wer der KI Zugriff gibt, sollte heikle Seiten wie E-Banking schliessen und wichtige Schritte selbst bestätigen.",
+          "quelle": {
+            "name": "9to5Google",
+            "url": "https://9to5google.com/2026/10/16/chatgpt-gets-deeper-google-chrome-integration-including-control-over-tabs/"
+          }
+        },
+        {
+          "datum": "16.10.",
+          "firma": "Replit / Anthropic",
+          "kategorie": "Wirtschaft",
+          "titel": "Replit-Chef: Wechsel von Claude zu ChatGPT",
+          "text": "Der Chef der Programmier-Plattform Replit sagte an einer Konferenz, man arbeite nicht mehr mit Anthropic zusammen. Gründe seien Kosten und bessere Resultate von OpenAI beim Bauen von Apps. Laut TechCrunch widersprechen Insider: Die Partnerschaft bestehe noch. Die Episode zeigt, wie schnell Anbieter von KI-Diensten ihre Modelle wechseln.",
+          "quelle": {
+            "name": "TechCrunch",
+            "url": "https://techcrunch.com/2026/10/16/replit-is-no-longer-working-with-anthropic-ceo-says/"
+          }
+        },
+        {
+          "datum": "16.10.",
+          "firma": "Google",
+          "kategorie": "Neues Modell",
+          "titel": "Gemini 4 Argon holt in Tests zur Spitze auf",
+          "text": "Googles neues Modell Gemini 4 Argon erzielt in weiteren unabhängigen Tests Werte nahe der Spitzengruppe, etwa bei Denk- und Rätselaufgaben. In Mathematik und beim Programmieren liegt es laut ersten Schätzungen aber nur im Mittelfeld. Für Entwickler kostet die Nutzung über die Schnittstelle 2 Dollar pro Million eingegebener Textbausteine.",
+          "quelle": {
+            "name": "The Decoder",
+            "url": "https://the-decoder.de/googles-gemini-4-argon-schliesst-in-weiteren-benchmarks-zur-ki-spitze-auf/"
           }
         }
       ]
