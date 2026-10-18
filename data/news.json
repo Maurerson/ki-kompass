@@ -1,72 +1,10 @@
 {
-  "stand": "2026-10-17",
+  "stand": "2026-10-18",
   "hinweis": "Zusammenfassungen in eigenen Worten. Jede Meldung verlinkt auf ihre Quelle.",
   "tage": [
     {
       "key": "gestern",
       "label": "Gestern",
-      "datum": "2026-10-16",
-      "items": [
-        {
-          "datum": "16.10.",
-          "firma": "Microsoft",
-          "kategorie": "Neues Modell",
-          "titel": "Microsoft trainiert eigenes Riesenmodell MAI-Base-2",
-          "text": "Microsoft hat das Grundtraining seines eigenen KI-Modells MAI-Base-2 abgeschlossen. Es soll mit deutlich weniger Rechenaufwand auskommen als vergleichbare Modelle und kann auch Bilder verarbeiten. Fertig ist es noch nicht: Zuerst kommt es in Microsofts eigene Produkte, später für Geschäftskunden über Foundry. Microsoft wird so unabhängiger von OpenAI.",
-          "quelle": {
-            "name": "Microsoft AI",
-            "url": "https://microsoft.ai/news/frontier-pre-training-at-microsoft-ai/"
-          }
-        },
-        {
-          "datum": "16.10.",
-          "firma": "Apple",
-          "kategorie": "Sicherheit",
-          "titel": "Apple verschärft App-Store-Regeln gegen KI-Nacktbilder",
-          "text": "Apple hat die Regeln für den App Store angepasst. Apps, die mit KI Nacktbilder echter Menschen ohne deren Einwilligung erzeugen, werden entfernt. Neu verboten sind auch versteckte Funktionen, die erst nach der Prüfung durch Apple eingeschaltet werden. Anbieter von KI-Apps müssen solche Fälschungen aktiv verhindern, sonst droht der Ausschluss aus dem Entwicklerprogramm.",
-          "quelle": {
-            "name": "MacRumors",
-            "url": "https://www.macrumors.com/2026/10/16/app-store-rules-deepfakes/"
-          }
-        },
-        {
-          "datum": "16.10.",
-          "firma": "China",
-          "kategorie": "Recht & Regeln",
-          "titel": "China will Export von KI-Technik stärker kontrollieren",
-          "text": "China hat einen Entwurf für strengere Exportregeln vorgelegt. Betroffen sind 23 KI-Schlüsseltechnologien, etwa Gewichte und Quellcode sehr grosser Modelle. KI, die selbständig Schadsoftware baut, soll gar nicht exportiert werden. Wer Modelle offen veröffentlicht, erhält eine schnelle Bewilligung. Die Nutzung über Apps oder Schnittstellen bleibt frei.",
-          "quelle": {
-            "name": "The Decoder",
-            "url": "https://the-decoder.de/china-will-export-von-open-weight-modellen-und-ki-technologie-strenger-kontrollieren/"
-          }
-        },
-        {
-          "datum": "16.10.",
-          "firma": "Anthropic",
-          "kategorie": "Arbeitswelt",
-          "titel": "Anthropic: Weniger Junioren, mehr KI-Agenten",
-          "text": "Anthropic hat Zahlen zur eigenen Belegschaft veröffentlicht. KI-Agenten arbeiten dort inzwischen rund sechsmal so viele Stunden wie die Angestellten. Der Anteil junger Berufseinsteiger bei technischen Neuanstellungen sank von 27 auf 9 Prozent. Gleichzeitig verbringen Mitarbeitende mehr Zeit in Sitzungen. Für Berufseinsteiger ist das ein Hinweis, dass KI-Kenntnisse bei Bewerbungen wichtiger werden.",
-          "quelle": {
-            "name": "Anthropic",
-            "url": "https://www.anthropic.com/research/employment-at-anthropic"
-          }
-        },
-        {
-          "datum": "16.10.",
-          "firma": "Accenture / Anthropic",
-          "kategorie": "Arbeitswelt",
-          "titel": "Accenture begrenzt KI-Budget pro Person",
-          "text": "Der Beratungskonzern Accenture zahlt seinen Angestellten zentral nur noch 29 Dollar pro Monat für die Nutzung von Claude. Wer mehr braucht, muss die Kosten über ein Projekt oder Team abrechnen. Laut Bericht kommen manche auf mehrere hundert Dollar im Monat. Das zeigt: Auch in Firmen werden KI-Kosten zum Budgetthema, das man im Blick behalten sollte.",
-          "quelle": {
-            "name": "RuntimeWire (nach 404 Media)",
-            "url": "https://runtimewire.com/article/accenture-29-dollar-claude-monthly-budget"
-          }
-        }
-      ]
-    },
-    {
-      "key": "heute",
-      "label": "Heute",
       "datum": "2026-10-17",
       "items": [
         {
@@ -81,47 +19,109 @@
           }
         },
         {
-          "datum": "16.10.",
+          "datum": "17.10.",
+          "firma": "DeepSeek",
+          "kategorie": "Neues Modell",
+          "titel": "DeepSeek frischt Flash-Modell auf und startet eigene Websuche",
+          "text": "DeepSeek hat sein günstiges Modell V4.1-Flash aktualisiert. Laut eigenen Tests schneidet es beim Programmieren und bei Agenten-Aufgaben sehr gut ab und kann sehr lange Texte verarbeiten. Neu bietet DeepSeek auch eine eigene Such- und Abruf-Schnittstelle für Entwickler an, für 0.75 Dollar pro 1000 Anfragen. Die Werte stammen vom Hersteller selbst.",
+          "quelle": {
+            "name": "MarkTechPost",
+            "url": "https://www.marktechpost.com/2026/10/17/deepseek-just-released-v4-1-flash-1017-scores-77-0-on-deepswe-opens-search-api/"
+          }
+        },
+        {
+          "datum": "17.10.",
+          "firma": "Microsoft / Meta / Anthropic",
+          "kategorie": "Wirtschaft",
+          "titel": "Microsoft und Meta fahren Nutzung von Claude Code zurück",
+          "text": "Laut einem Bericht von The Information sollen Entwickler bei Microsoft und Meta weniger mit Anthropics Programmier-Agenten Claude Code arbeiten. Bei Meta soll sich die Zahl der Nutzenden seit Jahresbeginn etwa halbiert haben. Beide Konzerne setzen stärker auf eigene Werkzeuge. Für Microsoft-Kunden ändert sich laut Bericht nichts: Sie können Claude weiter nutzen.",
+          "quelle": {
+            "name": "t3n",
+            "url": "https://t3n.de/news/microsoft-meta-claude-code-einschraenkung-1766817/"
+          }
+        },
+        {
+          "datum": "17.10.",
+          "firma": "xAI / Grok",
+          "kategorie": "Sicherheit",
+          "titel": "KI-Agent teilt Finanzbericht ungefragt im Firmen-Chat",
+          "text": "Ein US-Firmenchef liess mehrere KI-Agenten für sich arbeiten, einer hatte Zugriff auf sein Bankkonto. Ohne Auftrag landete sein privater Finanzbericht in einem Slack-Kanal der Firma, weil die Agenten untereinander Daten austauschten. Die Lehre: KI-Agenten nur so viel Zugriff geben wie nötig, und Bank- oder Finanzdaten besser ganz aussen vor lassen.",
+          "quelle": {
+            "name": "t3n",
+            "url": "https://t3n.de/news/ki-agent-finanzen-sicherheit-warnung-1767258/"
+          }
+        },
+        {
+          "datum": "17.10.",
+          "firma": "USA",
+          "kategorie": "Recht & Regeln",
+          "titel": "Haft für Betrug mit KI-Songs und Klick-Bots",
+          "text": "Ein Musiker in den USA muss für 18 Monate ins Gefängnis und über 8 Millionen Dollar zurückzahlen. Er hatte jahrelang KI-generierte Lieder auf Streaming-Diensten veröffentlicht und sie mit tausenden Bots und gefälschten Konten künstlich abspielen lassen, um Tantiemen zu kassieren. Das Urteil zeigt: Solcher Streaming-Betrug wird strafrechtlich verfolgt.",
+          "quelle": {
+            "name": "t3n",
+            "url": "https://t3n.de/news/haftstrafe-ki-songs-streaming-betrug-urteil-1767153/"
+          }
+        }
+      ]
+    },
+    {
+      "key": "heute",
+      "label": "Heute",
+      "datum": "2026-10-18",
+      "items": [
+        {
+          "datum": "18.10.",
+          "firma": "OpenCode",
+          "kategorie": "Sicherheit",
+          "titel": "Datenleck bei OpenCode: API-Schlüssel austauschen",
+          "text": "Beim Programmier-Werkzeug OpenCode sind Unbefugte in ein altes System eingedrungen. Dabei könnten gespeicherte Zugangsschlüssel für OpenAI, Anthropic und Google abgeflossen sein. Betroffen sind laut Firma 1,4 Prozent der Console-Nutzenden, einige melden bereits fremde Kosten. Wer OpenCode nutzt: Schlüssel beim Anbieter sperren, neue erstellen und die Abrechnung prüfen.",
+          "quelle": {
+            "name": "Notebookcheck",
+            "url": "https://www.notebookcheck.net/OpenCode-hacked-users-urged-to-revoke-their-API-keys.1426957.0.html"
+          }
+        },
+        {
+          "datum": "17.10.",
           "firma": "Anthropic",
           "kategorie": "Recht & Regeln",
-          "titel": "Anthropic schlägt eigenes KI-Sicherheitsgesetz vor",
-          "text": "Laut Politico und Reuters wirbt Anthropic im US-Kongress für einen eigenen Gesetzesentwurf. Unabhängige Prüfer sollen grosse KI-Modelle regelmässig testen. Stoppen dürfte der Staat ein Modell nur bei drohendem Schaden über einer Milliarde Dollar oder über 50 Toten, und nur mit Gerichtsbeschluss. Staatliche Eingriffe wären damit klar begrenzt. Es ist erst ein Entwurf.",
+          "titel": "Anthropic-Mitgründer fordert am IWF internationale KI-Regeln",
+          "text": "Jack Clark von Anthropic sprach am Treffen von Internationalem Währungsfonds und Weltbank in Bangkok. Er nannte ein internes Szenario, wonach KI die US-Wirtschaftsleistung bis 2030 um rund ein Drittel steigern könnte. Gleichzeitig forderte er ernsthafte internationale Regeln, überprüfbare Aufsicht und vorgeschriebene Notschalter, um KI-Systeme abschalten zu können.",
           "quelle": {
-            "name": "Reuters via KFGO",
-            "url": "https://kfgo.com/2026/10/16/anthropic-quietly-pitches-its-own-ai-safety-bill-to-lawmakers-politico-reports/"
+            "name": "AI Weekly (nach CNBC)",
+            "url": "https://aiweekly.co/alerts/anthropics-jack-clark-tells-imf-bangkok-ai-could-expand-us-gdp-to-44t-by-2030"
           }
         },
         {
-          "datum": "16.10.",
+          "datum": "15.10.",
           "firma": "OpenAI",
           "kategorie": "Neue Funktion",
-          "titel": "ChatGPT kann in Chrome Tabs bedienen",
-          "text": "Die ChatGPT-Erweiterung für den Chrome-Browser kann jetzt offene Tabs lesen und darin handeln: Formulare ausfüllen, Nachrichten senden, Dateien herunterladen oder Tabs ordnen. Dazu kommt eine Seitenleiste. Praktisch, aber Vorsicht: Wer der KI Zugriff gibt, sollte heikle Seiten wie E-Banking schliessen und wichtige Schritte selbst bestätigen.",
+          "titel": "ChatGPT-Sprachmodus erhält neue deutsche Stimmen",
+          "text": "OpenAI verteilt schrittweise ein Update für den Sprachmodus von ChatGPT. Es bringt 13 neue Stimmen, darunter je zwei für Deutsch und Französisch, und natürlicher klingende Akzente. Während einer Websuche soll die KI zudem seltener mit Zwischenmeldungen unterbrechen. Nicht alle sehen die neuen Stimmen sofort, je nach Region und Konto kann es dauern.",
           "quelle": {
-            "name": "9to5Google",
-            "url": "https://9to5google.com/2026/10/16/chatgpt-gets-deeper-google-chrome-integration-including-control-over-tabs/"
+            "name": "Notebookcheck",
+            "url": "https://www.notebookcheck.net/ChatGPT-Voice-GPT-Live-1-1-brings-new-voices-for-six-languages.1425810.0.html"
           }
         },
         {
           "datum": "16.10.",
-          "firma": "Replit / Anthropic",
-          "kategorie": "Wirtschaft",
-          "titel": "Replit-Chef: Wechsel von Claude zu ChatGPT",
-          "text": "Der Chef der Programmier-Plattform Replit sagte an einer Konferenz, man arbeite nicht mehr mit Anthropic zusammen. Gründe seien Kosten und bessere Resultate von OpenAI beim Bauen von Apps. Laut TechCrunch widersprechen Insider: Die Partnerschaft bestehe noch. Die Episode zeigt, wie schnell Anbieter von KI-Diensten ihre Modelle wechseln.",
+          "firma": "Amazon",
+          "kategorie": "Arbeitswelt",
+          "titel": "Amazon bewertet Lager mit KI nach Gewerkschafts-Risiko",
+          "text": "Laut internen Unterlagen, über die openDemocracy berichtet, nutzt Amazon ein KI-Werkzeug namens Atlas. Es schätzt für Lager in den USA, Kanada und Grossbritannien ein, wie wahrscheinlich sich Angestellte gewerkschaftlich organisieren. Amazon bestreitet, einzelne Personen zu überwachen. Gewerkschaften verlangen nun eine Untersuchung.",
           "quelle": {
-            "name": "TechCrunch",
-            "url": "https://techcrunch.com/2026/10/16/replit-is-no-longer-working-with-anthropic-ceo-says/"
+            "name": "openDemocracy",
+            "url": "https://www.opendemocracy.net/amazon-ai-surveillance-monitor-union-activity-uk-warehouses-birmingham-coventry-atlas-sutton-coldfield/"
           }
         },
         {
-          "datum": "16.10.",
-          "firma": "Google",
-          "kategorie": "Neues Modell",
-          "titel": "Gemini 4 Argon holt in Tests zur Spitze auf",
-          "text": "Googles neues Modell Gemini 4 Argon erzielt in weiteren unabhängigen Tests Werte nahe der Spitzengruppe, etwa bei Denk- und Rätselaufgaben. In Mathematik und beim Programmieren liegt es laut ersten Schätzungen aber nur im Mittelfeld. Für Entwickler kostet die Nutzung über die Schnittstelle 2 Dollar pro Million eingegebener Textbausteine.",
+          "datum": "15.10.",
+          "firma": "Perplexity",
+          "kategorie": "Open Source",
+          "titel": "Perplexity gibt Schutzumgebung für KI-Agenten frei",
+          "text": "Perplexity veröffentlicht SPACE als Open Source. Das ist die abgeschottete Umgebung, in der der hauseigene Agent Computer Programmcode ausführt. Jede Aufgabe läuft in einer eigenen kleinen virtuellen Maschine, Passwörter bleiben ausserhalb. In Tests gelang laut Perplexity kein Ausbruch. Firmen, die eigene KI-Agenten bauen, können die Technik frei nutzen.",
           "quelle": {
-            "name": "The Decoder",
-            "url": "https://the-decoder.de/googles-gemini-4-argon-schliesst-in-weiteren-benchmarks-zur-ki-spitze-auf/"
+            "name": "Unite.AI",
+            "url": "https://www.unite.ai/perplexity-open-sources-space-its-in-house-agent-sandbox-platform/"
           }
         }
       ]
